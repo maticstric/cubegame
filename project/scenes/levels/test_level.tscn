@@ -1,0 +1,356 @@
+[gd_scene load_steps=4 format=3 uid="uid://den4vikpqq3y8"]
+
+[ext_resource type="PackedScene" uid="uid://7x1mgdv1p7j6" path="res://project/scenes/objects/platform.tscn" id="1_hg7i7"]
+[ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
+[ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/starherder.tscn" id="4_k677e"]
+
+[node name="TestLevel" type="Node2D"]
+script = ExtResource("1_yf11b")
+player_scene = ExtResource("4_k677e")
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Walls" type="Node2D" parent="Platforms"]
+
+[node name="Platform" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 800)
+
+[node name="Platform2" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 864)
+
+[node name="Platform3" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 928)
+
+[node name="Platform4" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 992)
+
+[node name="Platform5" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 1056)
+
+[node name="Platform6" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 480)
+
+[node name="Platform7" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 544)
+
+[node name="Platform8" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 608)
+
+[node name="Platform9" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 672)
+
+[node name="Platform10" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 736)
+
+[node name="Platform11" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 160)
+
+[node name="Platform12" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 224)
+
+[node name="Platform13" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 288)
+
+[node name="Platform14" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 352)
+
+[node name="Platform15" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 416)
+
+[node name="Platform16" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 32)
+
+[node name="Platform17" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(32, 96)
+
+[node name="Platform18" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 800)
+
+[node name="Platform19" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 864)
+
+[node name="Platform20" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 928)
+
+[node name="Platform21" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 992)
+
+[node name="Platform22" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 1056)
+
+[node name="Platform23" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 480)
+
+[node name="Platform24" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 544)
+
+[node name="Platform25" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 608)
+
+[node name="Platform26" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 672)
+
+[node name="Platform27" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 736)
+
+[node name="Platform28" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 160)
+
+[node name="Platform29" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 224)
+
+[node name="Platform30" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 288)
+
+[node name="Platform31" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 352)
+
+[node name="Platform32" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 416)
+
+[node name="Platform33" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 32)
+
+[node name="Platform34" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1888, 96)
+
+[node name="Platform35" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(96, 1056)
+
+[node name="Platform36" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(160, 1056)
+
+[node name="Platform37" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(224, 1056)
+
+[node name="Platform38" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(288, 1056)
+
+[node name="Platform39" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(352, 1056)
+
+[node name="Platform40" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(416, 1056)
+
+[node name="Platform41" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(480, 1056)
+
+[node name="Platform42" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(544, 1056)
+
+[node name="Platform43" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(608, 1056)
+
+[node name="Platform44" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(672, 1056)
+
+[node name="Platform45" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(736, 1056)
+
+[node name="Platform46" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(800, 1056)
+
+[node name="Platform47" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(864, 1056)
+
+[node name="Platform48" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(928, 1056)
+
+[node name="Platform49" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(992, 1056)
+
+[node name="Platform50" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1056, 1056)
+
+[node name="Platform51" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1120, 1056)
+
+[node name="Platform52" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1184, 1056)
+
+[node name="Platform53" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1248, 1056)
+
+[node name="Platform54" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1312, 1056)
+
+[node name="Platform55" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1376, 1056)
+
+[node name="Platform56" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1440, 1056)
+
+[node name="Platform57" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1504, 1056)
+
+[node name="Platform58" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1568, 1056)
+
+[node name="Platform59" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1632, 1056)
+
+[node name="Platform60" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1696, 1056)
+
+[node name="Platform61" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 1056)
+
+[node name="Platform62" parent="Platforms/Walls" instance=ExtResource("1_hg7i7")]
+position = Vector2(1824, 1056)
+
+[node name="Platforms" type="Node2D" parent="Platforms"]
+
+[node name="Platform" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(288, 800)
+
+[node name="Platform2" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(544, 800)
+
+[node name="Platform3" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(480, 800)
+
+[node name="Platform4" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(416, 800)
+
+[node name="Platform5" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(352, 800)
+
+[node name="Platform16" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(160, 416)
+
+[node name="Platform17" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(416, 416)
+
+[node name="Platform18" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(352, 416)
+
+[node name="Platform19" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(288, 416)
+
+[node name="Platform20" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(224, 416)
+
+[node name="Platform21" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(608, 224)
+
+[node name="Platform22" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(864, 224)
+
+[node name="Platform23" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(800, 224)
+
+[node name="Platform24" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(736, 224)
+
+[node name="Platform25" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(672, 224)
+
+[node name="Platform26" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1440, 864)
+
+[node name="Platform27" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1696, 864)
+
+[node name="Platform28" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1632, 864)
+
+[node name="Platform29" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1568, 864)
+
+[node name="Platform30" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1504, 864)
+
+[node name="Platform31" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(864, 864)
+
+[node name="Platform32" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1120, 864)
+
+[node name="Platform33" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1056, 864)
+
+[node name="Platform34" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(992, 864)
+
+[node name="Platform35" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(928, 864)
+
+[node name="Platform6" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(672, 608)
+
+[node name="Platform7" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(928, 608)
+
+[node name="Platform8" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(864, 608)
+
+[node name="Platform9" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(800, 608)
+
+[node name="Platform10" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(736, 608)
+
+[node name="Platform11" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1056, 416)
+
+[node name="Platform12" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1312, 416)
+
+[node name="Platform36" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1568, 288)
+
+[node name="Platform37" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1632, 288)
+
+[node name="Platform38" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1696, 288)
+
+[node name="Platform39" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 288)
+
+[node name="Platform40" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 224)
+
+[node name="Platform41" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 160)
+
+[node name="Platform42" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 40)
+
+[node name="Platform43" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1696, 40)
+
+[node name="Platform44" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1632, 40)
+
+[node name="Platform45" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1760, 96)
+
+[node name="Platform46" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1568, 40)
+
+[node name="Platform47" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1504, 40)
+
+[node name="Platform13" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1248, 416)
+
+[node name="Platform14" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1184, 416)
+
+[node name="Platform15" parent="Platforms/Platforms" instance=ExtResource("1_hg7i7")]
+position = Vector2(1120, 416)
+
+[node name="SpawnLocations" type="Node2D" parent="."]
+
+[node name="0" type="Node2D" parent="SpawnLocations"]
+position = Vector2(256, 256)
+
+[node name="1" type="Node2D" parent="SpawnLocations"]
+position = Vector2(960, 704)
+
+[node name="2" type="Node2D" parent="SpawnLocations"]
+position = Vector2(832, 448)
+
+[node name="3" type="Node2D" parent="SpawnLocations"]
+position = Vector2(384, 640)

@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg5kntauankt1"]
+
+[ext_resource type="Script" path="res://project/scripts/main_menu.gd" id="1_j3iuw"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j3iuw")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -393.0
+offset_top = 128.0
+offset_right = 393.0
+offset_bottom = 336.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 150
+text = "cube game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HostButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -416.0
+offset_top = 68.0
+offset_right = 416.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+text = "host"
+
+[node name="JoinButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -416.0
+offset_top = 156.0
+offset_right = -7.0
+offset_bottom = 228.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+text = "join
+"
+
+[node name="IpAddressLineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 968.0
+offset_top = 696.0
+offset_right = 1376.0
+offset_bottom = 768.0
+theme_override_font_sizes/font_size = 45
+text = "localhost"
+placeholder_text = "enter ip address..."
+
+[node name="UsernameLineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -416.0
+offset_top = -36.0
+offset_right = 416.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+placeholder_text = "enter username..."
+
+[connection signal="pressed" from="HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="JoinButton" to="." method="_on_join_button_pressed"]
