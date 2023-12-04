@@ -1568,19 +1568,19 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("Skeleton2D/LegR:scale")
+tracks/24/path = NodePath("Polygons/AttackSwing:visible")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.999837, 0.999837)]
+"update": 1,
+"values": [false]
 }
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("Polygons/AttackSwing:visible")
+tracks/25/path = NodePath("Polygons/AttackSwingSmall:visible")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
@@ -1592,14 +1592,50 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("Polygons/AttackSwingSmall:visible")
+tracks/26/path = NodePath("Skeleton2D/LegR:position")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(43, -149)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Skeleton2D/LegR:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.73491]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Skeleton2D/LegL:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-9, -147)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("Skeleton2D/LegL:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.73491]
 }
 
 [sub_resource type="Animation" id="Animation_n47ht"]
@@ -3093,103 +3129,103 @@ tracks/44/keys = {
 tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("Skeleton2D/LegR:scale")
+tracks/45/path = NodePath("Polygons/AttackSwing:visible")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.999837, 0.999837)]
+"update": 1,
+"values": [false]
 }
 tracks/46/type = "value"
 tracks/46/imported = false
 tracks/46/enabled = true
-tracks/46/path = NodePath("Polygons/AttackSwing:visible")
+tracks/46/path = NodePath("Polygons/AttackSwing:position")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(-12, -575)]
 }
 tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("Polygons/AttackSwing:position")
+tracks/47/path = NodePath("Polygons/AttackSwing:rotation")
 tracks/47/interp = 1
 tracks/47/loop_wrap = true
 tracks/47/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-12, -575)]
+"values": [0.0]
 }
 tracks/48/type = "value"
 tracks/48/imported = false
 tracks/48/enabled = true
-tracks/48/path = NodePath("Polygons/AttackSwing:rotation")
+tracks/48/path = NodePath("Polygons/Weapon:scale")
 tracks/48/interp = 1
 tracks/48/loop_wrap = true
 tracks/48/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [Vector2(1, 1)]
 }
 tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("Polygons/Weapon:scale")
+tracks/49/path = NodePath("Polygons/AttackSwingSmall:visible")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
+"update": 1,
+"values": [false]
 }
 tracks/50/type = "value"
 tracks/50/imported = false
 tracks/50/enabled = true
-tracks/50/path = NodePath("Polygons/AttackSwingSmall:visible")
+tracks/50/path = NodePath("Polygons/AttackSwingSmall:position")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(-69, -815)]
 }
 tracks/51/type = "value"
 tracks/51/imported = false
 tracks/51/enabled = true
-tracks/51/path = NodePath("Polygons/AttackSwingSmall:position")
+tracks/51/path = NodePath("Polygons/AttackSwingSmall:rotation")
 tracks/51/interp = 1
 tracks/51/loop_wrap = true
 tracks/51/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-69, -815)]
+"values": [0.144078]
 }
 tracks/52/type = "value"
 tracks/52/imported = false
 tracks/52/enabled = true
-tracks/52/path = NodePath("Polygons/AttackSwingSmall:rotation")
+tracks/52/path = NodePath("Polygons/Torso:modulate")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.144078]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/53/type = "value"
 tracks/53/imported = false
 tracks/53/enabled = true
-tracks/53/path = NodePath("Polygons/Torso:modulate")
+tracks/53/path = NodePath("Polygons/Head:modulate")
 tracks/53/interp = 1
 tracks/53/loop_wrap = true
 tracks/53/keys = {
@@ -3201,7 +3237,7 @@ tracks/53/keys = {
 tracks/54/type = "value"
 tracks/54/imported = false
 tracks/54/enabled = true
-tracks/54/path = NodePath("Polygons/Head:modulate")
+tracks/54/path = NodePath("Polygons/ArmR:modulate")
 tracks/54/interp = 1
 tracks/54/loop_wrap = true
 tracks/54/keys = {
@@ -3213,7 +3249,7 @@ tracks/54/keys = {
 tracks/55/type = "value"
 tracks/55/imported = false
 tracks/55/enabled = true
-tracks/55/path = NodePath("Polygons/ArmR:modulate")
+tracks/55/path = NodePath("Polygons/EarL:modulate")
 tracks/55/interp = 1
 tracks/55/loop_wrap = true
 tracks/55/keys = {
@@ -3225,7 +3261,7 @@ tracks/55/keys = {
 tracks/56/type = "value"
 tracks/56/imported = false
 tracks/56/enabled = true
-tracks/56/path = NodePath("Polygons/EarL:modulate")
+tracks/56/path = NodePath("Polygons/EarR:modulate")
 tracks/56/interp = 1
 tracks/56/loop_wrap = true
 tracks/56/keys = {
@@ -3237,7 +3273,7 @@ tracks/56/keys = {
 tracks/57/type = "value"
 tracks/57/imported = false
 tracks/57/enabled = true
-tracks/57/path = NodePath("Polygons/EarR:modulate")
+tracks/57/path = NodePath("Polygons/Cloak:modulate")
 tracks/57/interp = 1
 tracks/57/loop_wrap = true
 tracks/57/keys = {
@@ -3249,7 +3285,7 @@ tracks/57/keys = {
 tracks/58/type = "value"
 tracks/58/imported = false
 tracks/58/enabled = true
-tracks/58/path = NodePath("Polygons/Cloak:modulate")
+tracks/58/path = NodePath("Polygons/Hood:modulate")
 tracks/58/interp = 1
 tracks/58/loop_wrap = true
 tracks/58/keys = {
@@ -3261,7 +3297,7 @@ tracks/58/keys = {
 tracks/59/type = "value"
 tracks/59/imported = false
 tracks/59/enabled = true
-tracks/59/path = NodePath("Polygons/Hood:modulate")
+tracks/59/path = NodePath("Polygons/ArmL:modulate")
 tracks/59/interp = 1
 tracks/59/loop_wrap = true
 tracks/59/keys = {
@@ -3273,7 +3309,7 @@ tracks/59/keys = {
 tracks/60/type = "value"
 tracks/60/imported = false
 tracks/60/enabled = true
-tracks/60/path = NodePath("Polygons/ArmL:modulate")
+tracks/60/path = NodePath("Polygons/LegR:modulate")
 tracks/60/interp = 1
 tracks/60/loop_wrap = true
 tracks/60/keys = {
@@ -3285,22 +3321,10 @@ tracks/60/keys = {
 tracks/61/type = "value"
 tracks/61/imported = false
 tracks/61/enabled = true
-tracks/61/path = NodePath("Polygons/LegR:modulate")
+tracks/61/path = NodePath("Polygons/LegL:modulate")
 tracks/61/interp = 1
 tracks/61/loop_wrap = true
 tracks/61/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/62/type = "value"
-tracks/62/imported = false
-tracks/62/enabled = true
-tracks/62/path = NodePath("Polygons/LegL:modulate")
-tracks/62/interp = 1
-tracks/62/loop_wrap = true
-tracks/62/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
