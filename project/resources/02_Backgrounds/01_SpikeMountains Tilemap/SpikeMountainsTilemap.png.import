@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yfloah077dn3"
-path="res://.godot/imported/donkey full.png-4232692d75e5562664a75b541d054a3e.ctex"
+uid="uid://bhsi6vhfawmne"
+path="res://.godot/imported/SpikeMountainsTilemap.png-e43d3e522499fa9c242ad8f66983d974.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/resources/starherder/donkey full.png"
-dest_files=["res://.godot/imported/donkey full.png-4232692d75e5562664a75b541d054a3e.ctex"]
+source_file="res://project/resources/02_Backgrounds/01_SpikeMountains Tilemap/SpikeMountainsTilemap.png"
+dest_files=["res://.godot/imported/SpikeMountainsTilemap.png-e43d3e522499fa9c242ad8f66983d974.ctex"]
 
 [params]
 

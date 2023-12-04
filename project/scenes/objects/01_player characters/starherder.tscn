@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cb70ms4hue8pf"]
+[gd_scene load_steps=20 format=3 uid="uid://js1hajihd3sf"]
 
 [ext_resource type="Script" path="res://project/scripts/player.gd" id="1_6beam"]
 [ext_resource type="Texture2D" uid="uid://b40gq2eqhoons" path="res://project/resources/01_PlayerCharacters/01_starherder/AttackSwing Small.png" id="2_xxfqv"]

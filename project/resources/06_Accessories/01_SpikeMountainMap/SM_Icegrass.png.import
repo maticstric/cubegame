@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs7jro8ey0jku"
-path="res://.godot/imported/donkeyanimation_tex.png-f9e712edf628abdb6bafc4b685fef2e3.ctex"
+uid="uid://yt1atmwjv35e"
+path="res://.godot/imported/SM_Icegrass.png-e44922cbac7f7cf3991e1e040ce08a3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/resources/starherder/donkeyanimation_tex.png"
-dest_files=["res://.godot/imported/donkeyanimation_tex.png-f9e712edf628abdb6bafc4b685fef2e3.ctex"]
+source_file="res://project/resources/06_Accessories/01_SpikeMountainMap/SM_Icegrass.png"
+dest_files=["res://.godot/imported/SM_Icegrass.png-e44922cbac7f7cf3991e1e040ce08a3b.ctex"]
 
 [params]
 

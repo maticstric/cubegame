@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b40gq2eqhoons"
-path="res://.godot/imported/AttackSwing Small.png-6c80c915846673de9a24b668bc57070c.ctex"
+uid="uid://cs7jro8ey0jku"
+path="res://.godot/imported/donkeyanimation_tex.png-7bf9a2718f285ffa1881a5694b86507d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/resources/starherder/AttackSwing Small.png"
-dest_files=["res://.godot/imported/AttackSwing Small.png-6c80c915846673de9a24b668bc57070c.ctex"]
+source_file="res://project/resources/01_PlayerCharacters/01_starherder/donkeyanimation_tex.png"
+dest_files=["res://.godot/imported/donkeyanimation_tex.png-7bf9a2718f285ffa1881a5694b86507d.ctex"]
 
 [params]
 

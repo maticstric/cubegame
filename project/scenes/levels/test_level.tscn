@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://7x1mgdv1p7j6" path="res://project/scenes/objects/platform.tscn" id="1_hg7i7"]
 [ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
-[ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/starherder.tscn" id="4_k677e"]
+[ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/01_player characters/starherder.tscn" id="4_k677e"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_yf11b")

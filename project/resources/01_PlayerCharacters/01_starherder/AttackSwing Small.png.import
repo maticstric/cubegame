@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhsi6vhfawmne"
-path="res://.godot/imported/SpikeMountainsTilemap.png-c9beead37cef5c5ecba59bbb3c389987.ctex"
+uid="uid://b40gq2eqhoons"
+path="res://.godot/imported/AttackSwing Small.png-87090ae108ada3d5706bbb23f1db760b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/resources/SpikeMountainsTilemap.png"
-dest_files=["res://.godot/imported/SpikeMountainsTilemap.png-c9beead37cef5c5ecba59bbb3c389987.ctex"]
+source_file="res://project/resources/01_PlayerCharacters/01_starherder/AttackSwing Small.png"
+dest_files=["res://.godot/imported/AttackSwing Small.png-87090ae108ada3d5706bbb23f1db760b.ctex"]
 
 [params]
 
