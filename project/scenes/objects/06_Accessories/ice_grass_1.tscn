@@ -1,46 +1,416 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbg2wg4ew5kgf"]
+[gd_scene load_steps=7 format=3 uid="uid://dbg2wg4ew5kgf"]
 
 [ext_resource type="Texture2D" uid="uid://yt1atmwjv35e" path="res://project/resources/06_Accessories/01_SpikeMountainMap/SM_Icegrass.png" id="1_svkd5"]
+[ext_resource type="Script" path="res://project/scripts/grass_animation.gd" id="2_yvpyy"]
+
+[sub_resource type="Animation" id="Animation_6fgpk"]
+resource_name = "IDLE"
+length = 3.6
+loop_mode = 1
+step = 0.03
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/grassblade 1/grassblade 1 long:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.298801, 0.0, 0.299355, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/grassblade 2/grassblade 2 long:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.184166, 0.0, 0.146919, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/grassblade 3/grassblade 3 long:rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.135643, 0.0, 0.148566, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/grassblade 4/grassblade 4 long:rotation")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.114816, 0.0, 0.167545, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/grassblade 5/grassblade 5 long:rotation")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.124726, 0.0, 0.154771, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/grassblade 6/grassblade 6 long:rotation")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.78, 1.74, 2.7, 3.63),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.141342, 0.0, 0.218891, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ikr5p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/grassblade 1/grassblade 1 long:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/grassblade 2/grassblade 2 long:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/grassblade 3/grassblade 3 long:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/grassblade 4/grassblade 4 long:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/grassblade 5/grassblade 5 long:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/grassblade 6/grassblade 6 long:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_4oscd"]
+resource_name = "MOVE"
+length = 0.36
+step = 0.03
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/grassblade 1/grassblade 1 long:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.205712, -1.31721, -0.0357385]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/grassblade 2/grassblade 2 long:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.193665, -1.1388, 0.00106049]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/grassblade 3/grassblade 3 long:rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -1.11834, 0.00788403]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/grassblade 4/grassblade 4 long:rotation")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.103504, 1.04977, 0.0150919]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/grassblade 5/grassblade 5 long:rotation")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.126783, 1.28925, -0.00273156]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/grassblade 6/grassblade 6 long:rotation")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.18, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.173789, 1.37664, -0.0316683]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kbwb4"]
+_data = {
+"IDLE": SubResource("Animation_6fgpk"),
+"MOVE": SubResource("Animation_4oscd"),
+"RESET": SubResource("Animation_ikr5p")
+}
 
 [node name="IceGrass_1" type="Node2D"]
 
-[node name="grassblade 1" type="Polygon2D" parent="."]
+[node name="Polygons" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="grassblade 1" type="Polygon2D" parent="Polygons"]
 position = Vector2(-11, -5)
 offset = Vector2(-34, -177)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(21.5559, 182.496, 19.611, 173.582, 18.4765, 168.395, 17.6661, 163.857, 7.29335, 95.9481, 33.8736, 39.7083, 61.9125, 93.517, 52.188, 161.75, 51.8639, 168.233, 50.8914, 171.961, 50.081, 182.82)
-uv = PackedVector2Array(21.5559, 182.496, 19.611, 173.582, 18.4765, 168.395, 17.6661, 163.857, 7.29335, 95.9481, 33.8736, 39.7083, 61.9125, 93.517, 52.188, 161.75, 51.8639, 168.233, 50.8914, 171.961, 50.081, 182.82)
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(21.4286, 182.193, 33.501, 182.394, 49.0946, 182.495, 50.7042, 174.447, 52.1127, 166.398, 53.5211, 156.841, 61.3682, 94.5674, 35.4125, 41.4487, 8.04829, 92.7565, 17.7062, 157.646, 18.7123, 165.694, 19.9195, 173.642, 35.5131, 156.539, 35.1107, 166.097, 34.7082, 173.742, 34.757, 91.1635)
+uv = PackedVector2Array(21.4286, 182.193, 33.501, 182.394, 49.0946, 182.495, 50.7042, 174.447, 52.1127, 166.398, 53.5211, 156.841, 61.3682, 94.5674, 35.4125, 41.4487, 8.04829, 92.7565, 17.7062, 157.646, 18.7123, 165.694, 19.9195, 173.642, 35.5131, 156.539, 35.1107, 166.097, 34.7082, 173.742, 34.757, 91.1635)
+polygons = [PackedInt32Array(0, 11, 14, 1), PackedInt32Array(1, 2, 3, 14), PackedInt32Array(14, 13, 4, 3), PackedInt32Array(14, 11, 10, 13), PackedInt32Array(12, 13, 4, 5), PackedInt32Array(9, 12, 13, 10), PackedInt32Array(9, 8, 15, 12), PackedInt32Array(12, 5, 6, 15), PackedInt32Array(15, 7, 6), PackedInt32Array(15, 8, 7)]
+bones = ["grassblade 1", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1), "grassblade 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
 
-[node name="grassblade 2" type="Polygon2D" parent="."]
+[node name="grassblade 2" type="Polygon2D" parent="Polygons"]
 position = Vector2(14, -3)
 offset = Vector2(-91, -178)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(73.2759, 181.681, 104.526, 182.543, 106.466, 173.06, 107.328, 167.888, 107.543, 162.931, 117.673, 88.3652, 89.1016, 30.1915, 60.5302, 86.8925, 72.4595, 164.948, 73.6377, 170.103, 73.9323, 173.343)
-uv = PackedVector2Array(73.2759, 181.681, 104.526, 182.543, 106.466, 173.06, 107.328, 167.888, 107.543, 162.931, 117.673, 88.3652, 89.1016, 30.1915, 60.5302, 86.8925, 72.4595, 164.948, 73.6377, 170.103, 73.9323, 173.343)
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(75.5531, 181.416, 88.6062, 182.19, 103.761, 182.19, 105.642, 174.779, 106.527, 166.593, 107.854, 158.186, 117.231, 88.8071, 89.5434, 30.9278, 60.2356, 87.3343, 71.8704, 158.321, 72.6068, 168.63, 73.785, 174.963, 89.838, 156.848, 90.1325, 166.127, 89.1016, 174.374, 89.2157, 86.2745)
+uv = PackedVector2Array(75.5531, 181.416, 88.6062, 182.19, 103.761, 182.19, 105.642, 174.779, 106.527, 166.593, 107.854, 158.186, 117.231, 88.8071, 89.5434, 30.9278, 60.2356, 87.3343, 71.8704, 158.321, 72.6068, 168.63, 73.785, 174.963, 89.838, 156.848, 90.1325, 166.127, 89.1016, 174.374, 89.2157, 86.2745)
+polygons = [PackedInt32Array(1, 14, 11, 0), PackedInt32Array(1, 14, 3, 2), PackedInt32Array(14, 13, 4, 3), PackedInt32Array(12, 13, 4, 5), PackedInt32Array(12, 9, 10, 13), PackedInt32Array(13, 14, 11, 10), PackedInt32Array(12, 15, 6, 5), PackedInt32Array(12, 9, 8, 15), PackedInt32Array(15, 7, 8), PackedInt32Array(15, 7, 6)]
+bones = ["grassblade 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1), "grassblade 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
 
-[node name="grassblade 6" type="Polygon2D" parent="."]
-position = Vector2(95, -10)
+[node name="grassblade 6" type="Polygon2D" parent="Polygons"]
+position = Vector2(102, -10)
 offset = Vector2(-302, -171)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(286.869, 182.328, 284.067, 172.629, 282.774, 161.207, 272.429, 91.1638, 300.231, 35.5603, 329.541, 88.7931, 318.765, 159.698, 317.688, 168.535, 315.532, 182.328)
-uv = PackedVector2Array(286.869, 182.328, 284.067, 172.629, 282.774, 161.207, 272.429, 91.1638, 300.231, 35.5603, 329.541, 88.7931, 318.765, 159.698, 317.688, 168.535, 315.532, 182.328)
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(285.991, 181.897, 300.862, 182.112, 315.086, 182.328, 316.81, 172.414, 317.888, 164.224, 319.397, 155.603, 329.741, 90.0862, 300.431, 33.4052, 272.629, 88.1466, 282.228, 157.583, 283.649, 168.009, 284.597, 174.645, 302.607, 156.398, 301.896, 165.64, 301.659, 172.986, 302.37, 86.9668)
+uv = PackedVector2Array(285.991, 181.897, 300.862, 182.112, 315.086, 182.328, 316.81, 172.414, 317.888, 164.224, 319.397, 155.603, 329.741, 90.0862, 300.431, 33.4052, 272.629, 88.1466, 282.228, 157.583, 283.649, 168.009, 284.597, 174.645, 302.607, 156.398, 301.896, 165.64, 301.659, 172.986, 302.37, 86.9668)
+polygons = [PackedInt32Array(8, 15, 7), PackedInt32Array(15, 6, 7), PackedInt32Array(15, 12, 5, 6), PackedInt32Array(15, 8, 9, 12), PackedInt32Array(10, 9, 12, 13), PackedInt32Array(13, 4, 5, 12), PackedInt32Array(13, 14, 3, 4), PackedInt32Array(13, 10, 11, 14), PackedInt32Array(14, 1, 0, 11), PackedInt32Array(14, 3, 2, 1)]
+bones = ["grassblade 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
 
-[node name="grassblade 4" type="Polygon2D" parent="."]
-position = Vector2(-141, -181)
+[node name="grassblade 4" type="Polygon2D" parent="Polygons"]
+position = Vector2(60, -5)
+offset = Vector2(-201, -176)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(201.783, 182.531, 216.399, 182.353, 216.934, 178.431, 217.469, 173.44, 226.916, 96.6132, 202.852, 43.672, 179.323, 95.1872, 189.661, 170.766, 190.018, 174.688, 190.553, 180.392, 202.852, 175.936, 203.565, 171.836)
-uv = PackedVector2Array(201.783, 182.531, 216.399, 182.353, 216.934, 178.431, 217.469, 173.44, 226.916, 96.6132, 202.852, 43.672, 179.323, 95.1872, 189.661, 170.766, 190.018, 174.688, 190.553, 180.392, 202.852, 175.936, 203.565, 171.836)
-internal_vertex_count = 2
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(190.576, 182.434, 202.379, 182.525, 216.194, 182.617, 217.292, 175.846, 218.298, 169.808, 219.305, 162.855, 226.898, 95.5169, 203.568, 45.6542, 178.408, 96.0659, 187.943, 162.942, 188.827, 169.69, 189.934, 175.885, 202.987, 175.111, 203.208, 168.363, 203.208, 161.836, 202.755, 94.1653)
+uv = PackedVector2Array(190.576, 182.434, 202.379, 182.525, 216.194, 182.617, 217.292, 175.846, 218.298, 169.808, 219.305, 162.855, 226.898, 95.5169, 203.568, 45.6542, 178.408, 96.0659, 187.943, 162.942, 188.827, 169.69, 189.934, 175.885, 202.987, 175.111, 203.208, 168.363, 203.208, 161.836, 202.755, 94.1653)
+polygons = [PackedInt32Array(8, 15, 7), PackedInt32Array(15, 6, 7), PackedInt32Array(15, 14, 5, 6), PackedInt32Array(15, 8, 9, 14), PackedInt32Array(14, 13, 4, 5), PackedInt32Array(13, 12, 3, 4), PackedInt32Array(13, 10, 11, 12), PackedInt32Array(13, 14, 9, 10), PackedInt32Array(12, 1, 0, 11), PackedInt32Array(12, 3, 2, 1)]
+bones = ["grassblade 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1), "grassblade 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
 
-[node name="grassblade 5" type="Polygon2D" parent="."]
-position = Vector2(-166, -181)
+[node name="grassblade 5" type="Polygon2D" parent="Polygons"]
+position = Vector2(84, -1)
+offset = Vector2(-250, -180)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(226.293, 100.647, 234.483, 163.578, 236.207, 171.983, 237.716, 182.112, 262.931, 182.328, 263.578, 172.198, 264.871, 163.578, 273.922, 99.1379, 248.922, 47.4138)
-uv = PackedVector2Array(226.293, 100.647, 234.483, 163.578, 236.207, 171.983, 237.716, 182.112, 262.931, 182.328, 263.578, 172.198, 264.871, 163.578, 273.922, 99.1379, 248.922, 47.4138)
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(237.751, 181.928, 249.799, 181.928, 262.249, 181.794, 263.722, 174.967, 264.525, 168.541, 265.328, 162.651, 273.226, 99.3307, 249.531, 49.3976, 226.104, 99.4645, 235.475, 162.249, 236.278, 170.281, 236.814, 174.297, 250.602, 174.163, 250.469, 169.076, 250.469, 160.91, 249.799, 98.2597)
+uv = PackedVector2Array(237.751, 181.928, 249.799, 181.928, 262.249, 181.794, 263.722, 174.967, 264.525, 168.541, 265.328, 162.651, 273.226, 99.3307, 249.531, 49.3976, 226.104, 99.4645, 235.475, 162.249, 236.278, 170.281, 236.814, 174.297, 250.602, 174.163, 250.469, 169.076, 250.469, 160.91, 249.799, 98.2597)
+polygons = [PackedInt32Array(8, 15, 7), PackedInt32Array(15, 6, 7), PackedInt32Array(5, 14, 15, 6), PackedInt32Array(14, 9, 8, 15), PackedInt32Array(14, 13, 10, 9), PackedInt32Array(13, 4, 5, 14), PackedInt32Array(12, 13, 4, 3), PackedInt32Array(12, 1, 2, 3), PackedInt32Array(12, 11, 0, 1), PackedInt32Array(12, 13, 10, 11)]
+bones = ["grassblade 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1), "grassblade 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
 
-[node name="grassblade 3" type="Polygon2D" parent="."]
-position = Vector2(-110, -181)
+[node name="grassblade 3" type="Polygon2D" parent="Polygons"]
+position = Vector2(38, -4)
+offset = Vector2(-148, -177)
 texture = ExtResource("1_svkd5")
-polygon = PackedVector2Array(132.264, 182.175, 129.59, 170.945, 129.055, 165.062, 115.865, 77.0054, 148.128, 15.1515, 180.036, 77.3619, 167.736, 164.706, 167.023, 171.301, 164.349, 182.353, 148.46, 170.989, 148.46, 163.857)
-uv = PackedVector2Array(132.264, 182.175, 129.59, 170.945, 129.055, 165.062, 115.865, 77.0054, 148.128, 15.1515, 180.036, 77.3619, 167.736, 164.706, 167.023, 171.301, 164.349, 182.353, 148.46, 170.989, 148.46, 163.857)
-internal_vertex_count = 2
+skeleton = NodePath("../../Skeleton2D")
+polygon = PackedVector2Array(132.253, 181.738, 146.686, 181.885, 163.918, 182.327, 165.39, 173.932, 166.863, 165.243, 168.483, 155.228, 179.823, 77.4669, 147.865, 15.1694, 115.169, 78.2032, 127.982, 154.197, 129.455, 163.918, 130.928, 172.754, 147.451, 172.157, 148.039, 163.333, 147.451, 151.961, 147.451, 73.5294)
+uv = PackedVector2Array(132.253, 181.738, 146.686, 181.885, 163.918, 182.327, 165.39, 173.932, 166.863, 165.243, 168.483, 155.228, 179.823, 77.4669, 147.865, 15.1694, 115.169, 78.2032, 127.982, 154.197, 129.455, 163.918, 130.928, 172.754, 147.451, 172.157, 148.039, 163.333, 147.451, 151.961, 147.451, 73.5294)
+polygons = [PackedInt32Array(0, 11, 12, 1), PackedInt32Array(12, 3, 2, 1), PackedInt32Array(12, 13, 4, 3), PackedInt32Array(12, 13, 10, 11), PackedInt32Array(13, 14, 5, 4), PackedInt32Array(13, 10, 9, 14), PackedInt32Array(14, 15, 6, 5), PackedInt32Array(14, 9, 8, 15), PackedInt32Array(15, 7, 6), PackedInt32Array(15, 8, 7)]
+bones = ["grassblade 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 1/grassblade 1 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 2/grassblade 2 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 3", PackedFloat32Array(1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0), "grassblade 3/grassblade 3 long", PackedFloat32Array(0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1), "grassblade 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 4/grassblade 4 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 5/grassblade 5 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "grassblade 6/grassblade 6 long", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+internal_vertex_count = 4
+metadata/_edit_lock_ = true
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+rotation = -0.000756438
+
+[node name="grassblade 1" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(-10, -2)
+rest = Transform2D(1, 0, 0, 1, -10, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 1 long" type="Bone2D" parent="Skeleton2D/grassblade 1"]
+position = Vector2(0, -15)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 117.378
+bone_angle = -90.0
+
+[node name="grassblade 2" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(12, -2)
+rest = Transform2D(1, 0, 0, 1, 12, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 2 long" type="Bone2D" parent="Skeleton2D/grassblade 2"]
+position = Vector2(0, -15)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 126.594
+bone_angle = -90.0
+
+[node name="grassblade 3" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(38, -2)
+rest = Transform2D(1, 0, 0, 1, 38, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 3 long" type="Bone2D" parent="Skeleton2D/grassblade 3"]
+position = Vector2(0, -15)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 135.81
+bone_angle = -90.0
+
+[node name="grassblade 4" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(63, -2)
+rest = Transform2D(1, 0, 0, 1, 63, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 4 long" type="Bone2D" parent="Skeleton2D/grassblade 4"]
+position = Vector2(0, -15)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 108.161
+bone_angle = -90.0
+
+[node name="grassblade 5" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(84, -2)
+rest = Transform2D(1, 0, 0, 1, 84, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 5 long" type="Bone2D" parent="Skeleton2D/grassblade 5"]
+position = Vector2(0, -15)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 98.945
+bone_angle = -90.0
+
+[node name="grassblade 6" type="Bone2D" parent="Skeleton2D"]
+position = Vector2(101, -2)
+rest = Transform2D(1, 0, 0, 1, 101, -2)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = -90.0
+
+[node name="grassblade 6 long" type="Bone2D" parent="Skeleton2D/grassblade 6"]
+position = Vector2(0, -15)
+scale = Vector2(1, 1)
+rest = Transform2D(1, 0, 0, 1, 0, -15)
+auto_calculate_length_and_angle = false
+length = 117.377
+bone_angle = -90.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kbwb4")
+}
+script = ExtResource("2_yvpyy")

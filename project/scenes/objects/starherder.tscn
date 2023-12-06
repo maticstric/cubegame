@@ -2535,54 +2535,6 @@ tracks/36/keys = {
 "update": 0,
 "values": [0.0, 0.0]
 }
-tracks/37/type = "value"
-tracks/37/imported = false
-tracks/37/enabled = true
-tracks/37/path = NodePath("Skeleton2D:position")
-tracks/37/interp = 1
-tracks/37/loop_wrap = true
-tracks/37/keys = {
-"times": PackedFloat32Array(0, 0.24),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0)]
-}
-tracks/38/type = "value"
-tracks/38/imported = false
-tracks/38/enabled = true
-tracks/38/path = NodePath("Skeleton2D:rotation")
-tracks/38/interp = 1
-tracks/38/loop_wrap = true
-tracks/38/keys = {
-"times": PackedFloat32Array(0, 0.24),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0]
-}
-tracks/39/type = "value"
-tracks/39/imported = false
-tracks/39/enabled = true
-tracks/39/path = NodePath(".:position")
-tracks/39/interp = 1
-tracks/39/loop_wrap = true
-tracks/39/keys = {
-"times": PackedFloat32Array(0, 0.24),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0)]
-}
-tracks/40/type = "value"
-tracks/40/imported = false
-tracks/40/enabled = true
-tracks/40/path = NodePath(".:rotation")
-tracks/40/interp = 1
-tracks/40/loop_wrap = true
-tracks/40/keys = {
-"times": PackedFloat32Array(0, 0.24),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 0.0]
-}
 
 [sub_resource type="Animation" id="Animation_xb1gu"]
 length = 0.001
@@ -4827,11 +4779,12 @@ modification_stack = SubResource("SkeletonModificationStack2D_2uvnt")
 
 [node name="Hip" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(16, -170)
-skew = -0.00051713
+skew = -0.000519395
 rest = Transform2D(1, 0, 0, 1, 16, -170)
 
 [node name="Chest" type="Bone2D" parent="Skeleton2D/Hip"]
 position = Vector2(6, -114)
+scale = Vector2(0.999996, 0.999996)
 rest = Transform2D(1, 0, 0, 1, 6, -114)
 
 [node name="Head" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
@@ -4889,14 +4842,14 @@ bone_angle = 0.0
 position = Vector2(-18, -77)
 rotation = 1.6883
 scale = Vector2(0.999838, 0.999837)
-skew = -1.54972e-05
+skew = -2.72989e-05
 rest = Transform2D(-0.134913, 0.990857, -0.990857, -0.134913, -18, -77)
 
 [node name="ForearmL" type="Bone2D" parent="Skeleton2D/Hip/Chest/ArmL"]
 position = Vector2(130.207, -14.701)
 rotation = -0.417058
-scale = Vector2(0.999984, 0.999984)
-skew = -1.32322e-05
+scale = Vector2(0.999983, 0.999984)
+skew = -1.33514e-05
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 130.207, -14.701)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4905,14 +4858,14 @@ bone_angle = 17.454
 [node name="Cloak1" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
 position = Vector2(-4, -141)
 rotation = 2.01949
-skew = -0.00165796
+skew = -0.00167084
 rest = Transform2D(-0.433792, 0.901013, -0.901013, -0.433792, -4, -141)
 
 [node name="Cloak2" type="Bone2D" parent="Skeleton2D/Hip/Chest/Cloak1"]
 position = Vector2(154.105, -16.481)
 rotation = -0.479976
 scale = Vector2(0.99986, 0.99986)
-skew = -1.19209e-05
+skew = -1.23978e-05
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 154.105, -16.481)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4936,7 +4889,7 @@ rest = Transform2D(0.953958, 0.299941, -0.299941, 0.953958, 30, -96)
 position = Vector2(108.618, -7.94479)
 rotation = -0.377644
 scale = Vector2(0.999989, 0.999989)
-skew = -1.41859e-05
+skew = -1.43051e-05
 rest = Transform2D(0.846119, -0.532995, 0.532995, 0.846119, 108.618, -7.94479)
 auto_calculate_length_and_angle = false
 length = 68.462
@@ -4963,7 +4916,7 @@ bone_angle = 0.0
 [node name="LegL" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(-9, -147)
 rotation = 1.73491
-scale = Vector2(0.999831, 0.999831)
+scale = Vector2(0.999834, 0.999834)
 rest = Transform2D(-0.163382, 0.986563, -0.986563, -0.163382, -9, -147)
 auto_calculate_length_and_angle = false
 length = 134.039
