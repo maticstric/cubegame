@@ -12,11 +12,12 @@ extends CharacterBody2D
 
 var authority
 
+signal jumped
 
 func _physics_process(delta):
 
 	if authority:
-		$AnimationPlayer.handle_animation(velocity)
+		$AnimationPlayer.handle_animation()
 		
 		velocity.x = get_input_velocity() * move_speed
 		velocity.y += get_gravity() * delta
@@ -40,7 +41,7 @@ func _physics_process(delta):
 		
 		position = new_pos
 
-		$AnimationPlayer.handle_animation(vel)
+		$AnimationPlayer.handle_animation()
 
 
 func make_player_state():
@@ -54,15 +55,16 @@ func make_player_state():
 	var vel_y = velocity.y
 
 	return {
-		"T": time,                 # Time stamp
-		"PX": pos_x,               # Position x
-		"PY": pos_y,               # Position y
-		"VX": vel_x,               # Velocity x
-		"VY": vel_y                # Velocity y
+		"T": time,         # Time stamp
+		"PX": pos_x,       # Position x
+		"PY": pos_y,       # Position y
+		"VX": vel_x,       # Velocity x
+		"VY": vel_y        # Velocity y
 	}
 
 
 func jump():
+	jumped.emit()
 	velocity.y = jump_velocity
 
 

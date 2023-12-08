@@ -1,22 +1,36 @@
 extends AnimationPlayer
 
+@onready var player = get_parent()
 
-func handle_animation(velocity):
-	if velocity.length() == 0:
-		play("IDLE")
+var grounded = true
+var idle = true
+
+func _ready():
+	player.jumped.connect(_on_jumped)
+
+
+func handle_animation():
+
+	if player.is_on_floor():
+		if not grounded:
+			play("LAND")
+			
+		grounded = true
 	else:
-		
-		if velocity.x < 0:
+		grounded = false
+
+	if player.velocity.length() == 0:
+		queue("IDLE")
+	else:
+		if player.velocity.x < 0:
 			horizontal_flip(-1)
-		elif velocity.x > 0:
+		elif player.velocity.x > 0:
 			horizontal_flip(1)
 
-		if velocity.y < 0:
-			play("RISE")
-		elif velocity.y > 0:
+		if player.velocity.y > 0:
 			play("FALL")
-		elif velocity.x != 0:
-			play("WALK")
+		elif player.velocity.x != 0:
+			queue("WALK")
 
 
 func horizontal_flip(horizontal_direction):
@@ -26,3 +40,7 @@ func horizontal_flip(horizontal_direction):
 	polygons.scale.x = abs(polygons.scale.x) * horizontal_direction
 	skeleton2d.scale.x = abs(skeleton2d.scale.x) * horizontal_direction
 
+
+func _on_jumped():
+	play("LEAP")
+	queue("RISE")

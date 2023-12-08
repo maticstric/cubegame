@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cb70ms4hue8pf"]
+[gd_scene load_steps=20 format=3 uid="uid://js1hajihd3sf"]
 
 [ext_resource type="Script" path="res://project/scripts/player.gd" id="1_6beam"]
 [ext_resource type="Texture2D" uid="uid://b40gq2eqhoons" path="res://project/resources/01_PlayerCharacters/01_starherder/AttackSwing Small.png" id="2_xxfqv"]
@@ -4849,7 +4849,7 @@ rest = Transform2D(-0.134913, 0.990857, -0.990857, -0.134913, -18, -77)
 position = Vector2(130.207, -14.701)
 rotation = -0.417058
 scale = Vector2(0.999983, 0.999984)
-skew = -1.33514e-05
+skew = -1.38283e-05
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 130.207, -14.701)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4865,7 +4865,7 @@ rest = Transform2D(-0.433792, 0.901013, -0.901013, -0.433792, -4, -141)
 position = Vector2(154.105, -16.481)
 rotation = -0.479976
 scale = Vector2(0.99986, 0.99986)
-skew = -1.23978e-05
+skew = -1.27554e-05
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 154.105, -16.481)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4889,7 +4889,7 @@ rest = Transform2D(0.953958, 0.299941, -0.299941, 0.953958, 30, -96)
 position = Vector2(108.618, -7.94479)
 rotation = -0.377644
 scale = Vector2(0.999989, 0.999989)
-skew = -1.43051e-05
+skew = -1.45435e-05
 rest = Transform2D(0.846119, -0.532995, 0.532995, 0.846119, 108.618, -7.94479)
 auto_calculate_length_and_angle = false
 length = 68.462
