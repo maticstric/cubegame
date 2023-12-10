@@ -7,12 +7,7 @@ const PORT = 8910
 const MAX_CONNECTIONS = 4
 
 var player_info = {
-	"username": "",
-	"timestamp": 0,
-	"pos_x": 0,
-	"pos_y": 0,
-	"vel_x": 0,
-	"vel_y": 0
+	"username": ""
 }
 
 # Key: peer_id, Value: player_info
@@ -53,18 +48,6 @@ func register_player(new_player_info):
 	
 	players[new_peer_id] = new_player_info
 	
-
-@rpc("any_peer", "call_remote", "unreliable")
-func receive_player_state(player_state):
-	var peer_id = multiplayer.get_remote_sender_id()
-	
-	# Only update if the timestamp is newer
-	if players[peer_id]["timestamp"] < player_state["T"]:
-		players[peer_id]["timestamp"] = player_state["T"]
-		players[peer_id]["pos_x"] = player_state["PX"]
-		players[peer_id]["pos_y"] = player_state["PY"]
-		players[peer_id]["vel_x"] = player_state["VX"]
-		players[peer_id]["vel_y"] = player_state["VY"]
 
 # For client
 func leave_server():
