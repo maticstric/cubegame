@@ -4842,14 +4842,14 @@ bone_angle = 0.0
 position = Vector2(-18, -77)
 rotation = 1.6883
 scale = Vector2(0.999852, 0.999854)
-skew = -0.000261784
+skew = -0.00026226
 rest = Transform2D(-0.134913, 0.990857, -0.990857, -0.134913, -18, -77)
 
 [node name="ForearmL" type="Bone2D" parent="Skeleton2D/Hip/Chest/ArmL"]
 position = Vector2(130.207, -14.701)
 rotation = -0.417058
 scale = Vector2(0.999927, 0.999925)
-skew = -0.000195026
+skew = -0.000195384
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 130.207, -14.701)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4858,14 +4858,14 @@ bone_angle = 17.454
 [node name="Cloak1" type="Bone2D" parent="Skeleton2D/Hip/Chest"]
 position = Vector2(-4, -141)
 rotation = 2.01949
-skew = -0.00191796
+skew = -0.00191832
 rest = Transform2D(-0.433792, 0.901013, -0.901013, -0.433792, -4, -141)
 
 [node name="Cloak2" type="Bone2D" parent="Skeleton2D/Hip/Chest/Cloak1"]
 position = Vector2(154.105, -16.481)
 rotation = -0.479976
 scale = Vector2(0.999851, 0.999854)
-skew = -0.000167727
+skew = -0.000168204
 rest = Transform2D(0.887006, -0.461758, 0.461758, 0.887006, 154.105, -16.481)
 auto_calculate_length_and_angle = false
 length = 55.347
@@ -4889,7 +4889,7 @@ rest = Transform2D(0.953958, 0.299941, -0.299941, 0.953958, 30, -96)
 position = Vector2(108.618, -7.94479)
 rotation = -0.377644
 scale = Vector2(0.99993, 0.99993)
-skew = -0.000218272
+skew = -0.000218391
 rest = Transform2D(0.846119, -0.532995, 0.532995, 0.846119, 108.618, -7.94479)
 auto_calculate_length_and_angle = false
 length = 68.462
@@ -4907,7 +4907,7 @@ bone_angle = 0.0
 [node name="LegR" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(43, -149)
 rotation = 1.73491
-scale = Vector2(0.999832, 0.999832)
+scale = Vector2(0.999831, 0.999831)
 rest = Transform2D(-0.163382, 0.986563, -0.986563, -0.163382, 43, -149)
 auto_calculate_length_and_angle = false
 length = 134.039
@@ -4926,7 +4926,7 @@ bone_angle = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_0krkl")
 }
-blend_times = [&"RISE", &"FALL", 0.1, &"LEAP", &"RISE", 0.1]
+blend_times = [&"LEAP", &"RISE", 0.1, &"RISE", &"FALL", 0.1]
 script = ExtResource("5_y5ep0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
