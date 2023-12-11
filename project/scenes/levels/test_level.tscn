@@ -11,8 +11,8 @@ script = ExtResource("1_yf11b")
 player_scene = ExtResource("4_k677e")
 
 [node name="SpikeMountainsBackground" parent="." instance=ExtResource("3_uquy7")]
-position = Vector2(912, 1127)
-scale = Vector2(0.599999, 0.599999)
+position = Vector2(935, 1089)
+scale = Vector2(0.519999, 0.519999)
 
 [node name="Accessories" type="Node2D" parent="."]
 

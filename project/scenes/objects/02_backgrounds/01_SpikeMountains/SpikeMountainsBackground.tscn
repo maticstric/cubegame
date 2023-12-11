@@ -1,65 +1,24 @@
-[gd_scene load_steps=13 format=3 uid="uid://btsmjabn447xs"]
+[gd_scene load_steps=5 format=3 uid="uid://btsmjabn447xs"]
 
-[ext_resource type="Texture2D" uid="uid://jdlfnvjiwvup" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/08_Background.png" id="1_denui"]
-[ext_resource type="Texture2D" uid="uid://dhg8bpvf6ply8" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/07_MOONS.png" id="2_nk330"]
-[ext_resource type="Texture2D" uid="uid://b15q84dgdkh7" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/06_FAR_MOUNTAINS.png" id="3_gkk60"]
-[ext_resource type="Texture2D" uid="uid://dpmxeoqrmql0e" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/05_Close_Mountains.png" id="4_pnnfp"]
-[ext_resource type="Texture2D" uid="uid://b6mwkavec7k0y" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/05_Fog.png" id="5_bhrn0"]
-[ext_resource type="Texture2D" uid="uid://dvg1qhew8jd5v" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/04_Hills.png" id="6_bsyis"]
-[ext_resource type="Texture2D" uid="uid://2s3nclekq42j" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/04_Fog.png" id="7_04w60"]
-[ext_resource type="Texture2D" uid="uid://srockxjbhuu7" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/03_Hills.png" id="8_fted1"]
-[ext_resource type="Texture2D" uid="uid://rafms3oybcdw" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/03_Fog.png" id="9_88nbi"]
-[ext_resource type="Texture2D" uid="uid://bg86hwhev2pqh" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/02_Hills.png" id="10_w2666"]
-[ext_resource type="Texture2D" uid="uid://chvtdg41j3gst" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/02_Fog.png" id="11_v0pt6"]
-[ext_resource type="Texture2D" uid="uid://bt7mh3f3gw8vy" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/01_Grass.png" id="12_3svu8"]
+[ext_resource type="Texture2D" uid="uid://bu6uvksdp0i6s" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/03_Background.png" id="1_5g1yf"]
+[ext_resource type="Texture2D" uid="uid://bcv3min1o5b73" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/02_MiddleGround.png" id="2_wv8mj"]
+[ext_resource type="Texture2D" uid="uid://bhxva05mxx552" path="res://project/resources/02_Backgrounds/01_SpikeMountains Background/01_Foreground.png" id="3_fkecr"]
+[ext_resource type="PackedScene" uid="uid://r306kv7wojxk" path="res://project/scenes/objects/02_backgrounds/01_SpikeMountains/skrek.tscn" id="3_xhmi1"]
 
 [node name="SpikeMountainsBackground" type="Node2D"]
 position = Vector2(1901, 2168)
 
-[node name="08Background" type="Sprite2D" parent="."]
-position = Vector2(22, -1083)
-texture = ExtResource("1_denui")
+[node name="03Background" type="Sprite2D" parent="."]
+position = Vector2(11, -1084)
+texture = ExtResource("1_5g1yf")
 
-[node name="07Moons" type="Sprite2D" parent="."]
-position = Vector2(813, -1104)
-texture = ExtResource("2_nk330")
+[node name="02MiddleGround" type="Sprite2D" parent="."]
+position = Vector2(10, -730)
+texture = ExtResource("2_wv8mj")
 
-[node name="06FarMountains" type="Sprite2D" parent="."]
-position = Vector2(25, -736)
-texture = ExtResource("3_gkk60")
+[node name="Skrek" parent="." instance=ExtResource("3_xhmi1")]
+position = Vector2(-885, -216)
 
-[node name="05CloseMountains" type="Sprite2D" parent="."]
-position = Vector2(25, -771)
-texture = ExtResource("4_pnnfp")
-
-[node name="05Fog" type="Sprite2D" parent="."]
-position = Vector2(24, -740)
-texture = ExtResource("5_bhrn0")
-
-[node name="04Hills" type="Sprite2D" parent="."]
-position = Vector2(25, -406)
-texture = ExtResource("6_bsyis")
-
-[node name="04Fog" type="Sprite2D" parent="."]
-position = Vector2(20, -753)
-texture = ExtResource("7_04w60")
-
-[node name="03Hills" type="Sprite2D" parent="."]
-position = Vector2(23, -416)
-texture = ExtResource("8_fted1")
-
-[node name="03Fog" type="Sprite2D" parent="."]
-position = Vector2(26, -608)
-texture = ExtResource("9_88nbi")
-
-[node name="02Hills" type="Sprite2D" parent="."]
-position = Vector2(25, -318)
-texture = ExtResource("10_w2666")
-
-[node name="02Fog" type="Sprite2D" parent="."]
-position = Vector2(27, -311)
-texture = ExtResource("11_v0pt6")
-
-[node name="01Grass" type="Sprite2D" parent="."]
-position = Vector2(26, -232)
-texture = ExtResource("12_3svu8")
+[node name="01Foreground" type="Sprite2D" parent="."]
+position = Vector2(14, -323)
+texture = ExtResource("3_fkecr")
