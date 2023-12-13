@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://den4vikpqq3y8"]
+[gd_scene load_steps=7 format=3 uid="uid://den4vikpqq3y8"]
 
 [ext_resource type="PackedScene" uid="uid://7x1mgdv1p7j6" path="res://project/scenes/objects/platform.tscn" id="1_hg7i7"]
 [ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
 [ext_resource type="PackedScene" uid="uid://btsmjabn447xs" path="res://project/scenes/objects/02_backgrounds/01_SpikeMountains/SpikeMountainsBackground.tscn" id="3_uquy7"]
 [ext_resource type="PackedScene" uid="uid://dbg2wg4ew5kgf" path="res://project/scenes/objects/06_Accessories/ice_grass_1.tscn" id="4_go3i2"]
 [ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/01_player characters/starherder.tscn" id="4_k677e"]
+[ext_resource type="PackedScene" uid="uid://dbbgyiuhrc5pk" path="res://project/scenes/objects/06_Accessories/Rocks1.tscn" id="5_t2b3b"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_yf11b")
@@ -17,16 +18,24 @@ scale = Vector2(0.519999, 0.519999)
 [node name="Accessories" type="Node2D" parent="."]
 
 [node name="IceGrass_1" parent="Accessories" instance=ExtResource("4_go3i2")]
+z_index = 1
 position = Vector2(724, 576)
 scale = Vector2(0.32, 0.32)
 
 [node name="IceGrass_3" parent="Accessories" instance=ExtResource("4_go3i2")]
+z_index = 1
 position = Vector2(709, 576)
 scale = Vector2(0.2, 0.2)
 
 [node name="IceGrass_2" parent="Accessories" instance=ExtResource("4_go3i2")]
+z_index = 1
 position = Vector2(761, 576)
 scale = Vector2(0.16, 0.16)
+
+[node name="Rocks1" parent="Accessories" instance=ExtResource("5_t2b3b")]
+z_index = 1
+position = Vector2(343, 359)
+scale = Vector2(0.440001, 0.440001)
 
 [node name="Platforms" type="Node2D" parent="."]
 

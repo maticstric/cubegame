@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://dbbgyiuhrc5pk"]
+
+[ext_resource type="Texture2D" uid="uid://wsd81vy5a6eb" path="res://project/resources/06_Accessories/01_SpikeMountainMap/Rocks1 SpriteSheet.png" id="1_6lncy"]
+[ext_resource type="Script" path="res://project/scripts/rocks_animation.gd" id="2_csp1a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq3hw"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(0, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc8pl"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(200, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5n2q"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(400, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n771q"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(600, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_busqn"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(800, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xeese"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(1000, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fldd"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(1200, 0, 200, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0yse"]
+atlas = ExtResource("1_6lncy")
+region = Rect2(0, 0, 200, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_or4ue"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_hq3hw")
+}, {
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_wc8pl")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_d5n2q")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_n771q")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_busqn")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_xeese")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fldd")
+}],
+"loop": true,
+"name": &"BREAK",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0yse")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[node name="Rocks1" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(536, 72)
+sprite_frames = SubResource("SpriteFrames_or4ue")
+animation = &"BREAK"
+frame = 2
+frame_progress = 0.406943
+offset = Vector2(-536, -72)
+script = ExtResource("2_csp1a")

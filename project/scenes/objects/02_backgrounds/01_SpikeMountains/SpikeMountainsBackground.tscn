@@ -9,16 +9,19 @@
 position = Vector2(1901, 2168)
 
 [node name="03Background" type="Sprite2D" parent="."]
-position = Vector2(11, -1084)
+position = Vector2(138.111, -1148)
+scale = Vector2(1.0662, 1.0662)
 texture = ExtResource("1_5g1yf")
 
 [node name="02MiddleGround" type="Sprite2D" parent="."]
-position = Vector2(10, -730)
+position = Vector2(160, -703.375)
+scale = Vector2(1.13787, 1.13787)
 texture = ExtResource("2_wv8mj")
 
 [node name="Skrek" parent="." instance=ExtResource("3_xhmi1")]
-position = Vector2(-885, -216)
+position = Vector2(-597, -121)
 
 [node name="01Foreground" type="Sprite2D" parent="."]
-position = Vector2(14, -323)
+position = Vector2(140, -326)
+scale = Vector2(1.39924, 1.39924)
 texture = ExtResource("3_fkecr")
