@@ -4607,6 +4607,7 @@ _data = {
 size = Vector2(32, 96)
 
 [node name="Starherder" type="CharacterBody2D"]
+modulate = Color(0.92549, 0.92549, 0.92549, 1)
 script = ExtResource("1_6beam")
 move_speed = 500.0
 jump_height = 250.0
@@ -4889,7 +4890,7 @@ rest = Transform2D(0.953958, 0.299941, -0.299941, 0.953958, 30, -96)
 position = Vector2(108.618, -7.94479)
 rotation = -0.377644
 scale = Vector2(0.99993, 0.99993)
-skew = -0.000218749
+skew = -0.000218987
 rest = Transform2D(0.846119, -0.532995, 0.532995, 0.846119, 108.618, -7.94479)
 auto_calculate_length_and_angle = false
 length = 68.462

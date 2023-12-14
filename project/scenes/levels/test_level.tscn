@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://den4vikpqq3y8"]
+[gd_scene load_steps=9 format=3 uid="uid://den4vikpqq3y8"]
 
 [ext_resource type="PackedScene" uid="uid://7x1mgdv1p7j6" path="res://project/scenes/objects/platform.tscn" id="1_hg7i7"]
 [ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
@@ -6,12 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://dbg2wg4ew5kgf" path="res://project/scenes/objects/06_Accessories/ice_grass_1.tscn" id="4_go3i2"]
 [ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/01_player characters/starherder.tscn" id="4_k677e"]
 [ext_resource type="PackedScene" uid="uid://dbbgyiuhrc5pk" path="res://project/scenes/objects/06_Accessories/Rocks1.tscn" id="5_t2b3b"]
+[ext_resource type="PackedScene" uid="uid://4sfqgcwi5bbx" path="res://project/scenes/objects/06_Accessories/Rocks2.tscn" id="6_graht"]
+[ext_resource type="TileSet" uid="uid://6o76q3rhy71w" path="res://project/scenes/objects/04_Tilemaps/SpikeMountain_Tiles.tres" id="8_pg3wq"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_yf11b")
 player_scene = ExtResource("4_k677e")
 
 [node name="SpikeMountainsBackground" parent="." instance=ExtResource("3_uquy7")]
+visibility_layer = 2
 position = Vector2(935, 1089)
 scale = Vector2(0.519999, 0.519999)
 
@@ -37,7 +40,13 @@ z_index = 1
 position = Vector2(343, 359)
 scale = Vector2(0.440001, 0.440001)
 
+[node name="Rocks2" parent="Accessories" instance=ExtResource("6_graht")]
+z_index = 1
+position = Vector2(921, 562)
+scale = Vector2(0.28, 0.28)
+
 [node name="Platforms" type="Node2D" parent="."]
+visible = false
 
 [node name="Walls" type="Node2D" parent="Platforms"]
 
@@ -383,3 +392,16 @@ position = Vector2(832, 448)
 
 [node name="3" type="Node2D" parent="SpawnLocations"]
 position = Vector2(384, 640)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("8_pg3wq")
+format = 2
+layer_0/tile_data = PackedInt32Array(393218, 65537, 3, 393219, 131073, 3, 393220, 131073, 3, 393221, 131073, 3, 393222, 131073, 3, 393223, 196609, 3, 589834, 65537, 3, 589835, 131073, 3, 589836, 131073, 3, 589837, 131073, 3, 589838, 196609, 3, 393232, 65537, 3, 393233, 131073, 3, 393234, 131073, 3, 393235, 131073, 3, 393236, 196609, 3, 29, 1, 0, 65565, 1, 1, 131101, 1, 1, 196637, 1, 1, 262173, 1, 1, 327709, 1, 1, 393245, 1, 1, 458781, 1, 1, 524317, 1, 1, 589853, 1, 1, 655389, 1, 1, 720925, 1, 1, 786461, 1, 1, 851997, 1, 1, 917533, 1, 1, 983069, 1, 1, 1048605, 196609, 2, 1048604, 131073, 3, 1048603, 131073, 3, 1048602, 131073, 3, 1048601, 131073, 3, 1048600, 131073, 3, 1048599, 131073, 3, 1048598, 131073, 3, 1048597, 131073, 3, 1048596, 131073, 3, 1048595, 131073, 3, 1048594, 131073, 3, 1048593, 131073, 3, 1048592, 131073, 3, 1048591, 131073, 3, 1048590, 131073, 3, 1048589, 131073, 3, 1048588, 131073, 3, 1048587, 131073, 3, 1048586, 131073, 3, 1048585, 131073, 3, 1048584, 131073, 3, 1048583, 131073, 3, 1048582, 131073, 3, 1048581, 131073, 3, 1048580, 131073, 3, 1048579, 131073, 3, 1048578, 131073, 3, 1048577, 131073, 3, 1048576, 65537, 2, 983040, 1, 1, 917504, 1, 1, 851968, 1, 1, 786432, 1, 1, 720896, 1, 1, 655360, 1, 1, 589824, 1, 1, 524288, 1, 1, 458752, 1, 1, 393216, 1, 1, 327680, 1, 1, 262144, 1, 1, 196608, 1, 1, 131072, 1, 1, 65536, 1, 1, 0, 1, 0, 786436, 65537, 3, 786437, 131073, 3, 786438, 131073, 3, 786439, 131073, 3, 786440, 196609, 3, 851981, 65537, 3, 851982, 131073, 3, 851983, 131073, 3, 851984, 131073, 3, 851985, 196609, 3, 196617, 65537, 3, 196618, 131073, 3, 196619, 131073, 3, 196620, 131073, 3, 196621, 196609, 3, 23, 65537, 3, 24, 131073, 3, 25, 131073, 3, 26, 131073, 3, 27, 196609, 0, 65563, 1, 1, 131099, 1, 1, 196635, 1, 1, 262171, 196609, 2, 262170, 131073, 3, 262169, 131073, 3, 262168, 65537, 3, 851990, 65537, 3, 851991, 131073, 3, 851992, 131073, 3, 851993, 131073, 3, 851994, 196609, 3)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(935, 1089)
+rotation = 0.447932
+scale = Vector2(0.519999, 0.519999)
+energy = 0.1
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.984314)

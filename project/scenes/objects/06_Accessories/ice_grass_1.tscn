@@ -81,81 +81,6 @@ tracks/5/keys = {
 "values": [0.0, -0.141342, 0.0, 0.218891, 0.0]
 }
 
-[sub_resource type="Animation" id="Animation_ikr5p"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Skeleton2D/grassblade 1/grassblade 1 long:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Skeleton2D/grassblade 2/grassblade 2 long:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Skeleton2D/grassblade 3/grassblade 3 long:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Skeleton2D/grassblade 4/grassblade 4 long:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Skeleton2D/grassblade 5/grassblade 5 long:rotation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Skeleton2D/grassblade 6/grassblade 6 long:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="Animation" id="Animation_4oscd"]
 resource_name = "MOVE"
 length = 0.36
@@ -233,6 +158,81 @@ tracks/5/keys = {
 "values": [0.173789, 1.37664, -0.0316683]
 }
 
+[sub_resource type="Animation" id="Animation_ikr5p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/grassblade 1/grassblade 1 long:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/grassblade 2/grassblade 2 long:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/grassblade 3/grassblade 3 long:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/grassblade 4/grassblade 4 long:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/grassblade 5/grassblade 5 long:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/grassblade 6/grassblade 6 long:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kbwb4"]
 _data = {
 "IDLE": SubResource("Animation_6fgpk"),
@@ -246,6 +246,7 @@ _data = {
 metadata/_edit_lock_ = true
 
 [node name="grassblade 1" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(-11, -5)
 offset = Vector2(-34, -177)
 texture = ExtResource("1_svkd5")
@@ -258,6 +259,7 @@ internal_vertex_count = 4
 metadata/_edit_lock_ = true
 
 [node name="grassblade 2" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(14, -3)
 offset = Vector2(-91, -178)
 texture = ExtResource("1_svkd5")
@@ -270,6 +272,7 @@ internal_vertex_count = 4
 metadata/_edit_lock_ = true
 
 [node name="grassblade 6" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(102, -10)
 offset = Vector2(-302, -171)
 texture = ExtResource("1_svkd5")
@@ -282,6 +285,7 @@ internal_vertex_count = 4
 metadata/_edit_lock_ = true
 
 [node name="grassblade 4" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(60, -5)
 offset = Vector2(-201, -176)
 texture = ExtResource("1_svkd5")
@@ -294,6 +298,7 @@ internal_vertex_count = 4
 metadata/_edit_lock_ = true
 
 [node name="grassblade 5" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(84, -1)
 offset = Vector2(-250, -180)
 texture = ExtResource("1_svkd5")
@@ -306,6 +311,7 @@ internal_vertex_count = 4
 metadata/_edit_lock_ = true
 
 [node name="grassblade 3" type="Polygon2D" parent="Polygons"]
+modulate = Color(0.882353, 0.882353, 0.882353, 1)
 position = Vector2(38, -4)
 offset = Vector2(-148, -177)
 texture = ExtResource("1_svkd5")
@@ -343,7 +349,6 @@ bone_angle = -90.0
 
 [node name="grassblade 2 long" type="Bone2D" parent="Skeleton2D/grassblade 2"]
 position = Vector2(0, -15)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -15)
 auto_calculate_length_and_angle = false
 length = 126.594
@@ -358,7 +363,6 @@ bone_angle = -90.0
 
 [node name="grassblade 3 long" type="Bone2D" parent="Skeleton2D/grassblade 3"]
 position = Vector2(0, -15)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -15)
 auto_calculate_length_and_angle = false
 length = 135.81
@@ -373,7 +377,6 @@ bone_angle = -90.0
 
 [node name="grassblade 4 long" type="Bone2D" parent="Skeleton2D/grassblade 4"]
 position = Vector2(0, -15)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -15)
 auto_calculate_length_and_angle = false
 length = 108.161
@@ -388,7 +391,6 @@ bone_angle = -90.0
 
 [node name="grassblade 5 long" type="Bone2D" parent="Skeleton2D/grassblade 5"]
 position = Vector2(0, -15)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -15)
 auto_calculate_length_and_angle = false
 length = 98.945
@@ -403,7 +405,6 @@ bone_angle = -90.0
 
 [node name="grassblade 6 long" type="Bone2D" parent="Skeleton2D/grassblade 6"]
 position = Vector2(0, -15)
-scale = Vector2(1, 1)
 rest = Transform2D(1, 0, 0, 1, 0, -15)
 auto_calculate_length_and_angle = false
 length = 117.377

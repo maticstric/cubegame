@@ -75,6 +75,7 @@ animations = [{
 [node name="Rocks1" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
 position = Vector2(536, 72)
 sprite_frames = SubResource("SpriteFrames_or4ue")
 animation = &"BREAK"

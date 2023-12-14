@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://4sfqgcwi5bbx"]
+
+[ext_resource type="Texture2D" uid="uid://cfid7evpw2ebx" path="res://project/resources/06_Accessories/01_SpikeMountainMap/Rocks2 SpriteSheet.png" id="1_hj1fu"]
+[ext_resource type="Script" path="res://project/scripts/rocks_animation.gd" id="2_o50rg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2ess"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0du3"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc7g3"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2khl"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jck63"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm8ay"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(1000, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qplby"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(1200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hj5ul"]
+atlas = ExtResource("1_hj1fu")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cyg4u"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_c2ess")
+}, {
+"duration": 0.2,
+"texture": SubResource("AtlasTexture_p0du3")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_gc7g3")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_d2khl")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_jck63")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_fm8ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qplby")
+}],
+"loop": true,
+"name": &"BREAK",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hj5ul")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[node name="Rocks2" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cyg4u")
+animation = &"IDLE"
+script = ExtResource("2_o50rg")
