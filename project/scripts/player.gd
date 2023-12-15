@@ -4,17 +4,19 @@ extends CharacterBody2D
 @export var jump_height : float
 @export var jump_time_to_peak : float
 @export var jump_time_to_descent : float
+@export var max_jumps : int
 
 @onready var jump_velocity = -(2.0 * jump_height) / jump_time_to_peak
 @onready var jump_gravity = -(-2.0 * jump_height) / jump_time_to_peak ** 2
 @onready var fall_gravity = -(-2.0 * jump_height) / jump_time_to_descent ** 2
 
-
 var authority
-
+var grounded
 var cur_time = 0
+var jump_num = 0
 
 signal jumped
+signal landed
 
 var position_state = {
 	"t": 0,
@@ -42,6 +44,15 @@ func _physics_process(delta):
 	cur_time = Time.get_ticks_msec()
 	
 	if authority:
+		
+		if is_on_floor():
+			if not grounded:
+				landed.emit()
+				
+			grounded = true
+		else:
+			grounded = false
+
 		$AnimationPlayer.handle_animation()
 		
 		if velocity.x < 0:
@@ -52,9 +63,19 @@ func _physics_process(delta):
 		velocity.x = get_input_velocity() * move_speed
 		velocity.y += get_gravity() * delta
 		
-		if Input.is_action_pressed("jump") and is_on_floor():
-			jump()
-
+		if Input.is_action_just_pressed("attack"):
+			$AnimationPlayer.play("ATTACK")
+		
+		if is_on_floor():
+			jump_num = 0
+		
+		if Input.is_action_just_pressed("jump"):
+			if is_on_floor():
+				jump()
+			elif jump_num < max_jumps - 1:
+				jump()
+				jump_num += 1
+		
 		move_and_slide()
 		
 		var new_position_state = {}
@@ -89,6 +110,7 @@ func receive_animation_state(new_animation_state):
 
 
 func _on_animation_started(animation_name):
+	print(animation_name)
 	if authority:
 		var new_animation_state = {}
 		new_animation_state["t"] = cur_time

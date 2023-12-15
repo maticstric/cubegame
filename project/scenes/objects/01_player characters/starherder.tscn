@@ -4611,8 +4611,9 @@ modulate = Color(0.92549, 0.92549, 0.92549, 1)
 script = ExtResource("1_6beam")
 move_speed = 500.0
 jump_height = 250.0
-jump_time_to_peak = 0.4
+jump_time_to_peak = 0.35
 jump_time_to_descent = 0.3
+max_jumps = 2
 
 [node name="Polygons" type="Node2D" parent="."]
 scale = Vector2(0.15, 0.15)
@@ -4918,7 +4919,7 @@ bone_angle = 0.0
 [node name="LegL" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(-9, -147)
 rotation = 1.73491
-scale = Vector2(0.999833, 0.999833)
+scale = Vector2(0.999833, 0.999834)
 rest = Transform2D(-0.163382, 0.986563, -0.986563, -0.163382, -9, -147)
 auto_calculate_length_and_angle = false
 length = 134.039
@@ -4928,13 +4929,12 @@ bone_angle = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_0krkl")
 }
-blend_times = [&"LEAP", &"RISE", 0.1, &"RISE", &"FALL", 0.1]
+blend_times = [&"RISE", &"FALL", 0.1, &"LEAP", &"RISE", 0.1]
 script = ExtResource("5_y5ep0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -48)
 shape = SubResource("RectangleShape2D_8v1y6")
-metadata/_edit_lock_ = true
 
 [node name="UsernameLabel" type="Label" parent="."]
 offset_left = -192.0

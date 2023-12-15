@@ -5,29 +5,36 @@ extends AnimationPlayer
 var grounded = true
 var idle = true
 
+
 func _ready():
 	player.jumped.connect(_on_jumped)
+	player.landed.connect(_on_landed)
 
 
 func handle_animation():
-
-	if player.is_on_floor():
-		if not grounded:
-			play("LAND")
-			
-		grounded = true
-	else:
-		grounded = false
-
 	if player.velocity.length() == 0:
-		queue("IDLE")
-	else:
-		if player.velocity.y > 0:
-			play("FALL")
-		elif player.velocity.x != 0:
+		if current_animation == "LAND" or current_animation == "ATTACK":
+			queue("IDLE")
+		else:
+			play("IDLE")
+	elif player.velocity.x != 0:
+		if current_animation == "LAND" or current_animation == "ATTACK":
 			queue("WALK")
+		elif current_animation == "IDLE":
+			play("WALK")
+	elif player.velocity.y > 0:
+		if current_animation == "LAND" or current_animation == "ATTACK":
+			queue("FALL")
+		else:
+			play("FALL")
 
 
 func _on_jumped():
-	play("LEAP")
+	if current_animation != "ATTACK":
+		play("LEAP")
+	
 	queue("RISE")
+
+func _on_landed():
+	if current_animation != "ATTACK":
+		play("LAND")
