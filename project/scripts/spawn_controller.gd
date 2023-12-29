@@ -23,5 +23,8 @@ func spawn_players():
 		
 		if peer_id == multiplayer.get_unique_id():
 			current_player.authority = true
-		
+		else:
+			# Don't bump into other players
+			current_player.get_node("CollisionShape2D").set_disabled(true)
+			
 		current_player.global_position = $SpawnLocations.get_child(i).global_position

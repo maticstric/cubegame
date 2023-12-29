@@ -38,7 +38,7 @@ var hor_dir_state = {
 
 func _ready():
 	$AnimationPlayer.animation_started.connect(_on_animation_started)
-
+	$Hurtbox.area_entered.connect(_on_hurtbox_entered)
 
 func _physics_process(delta):
 	cur_time = Time.get_ticks_msec()
@@ -110,7 +110,6 @@ func receive_animation_state(new_animation_state):
 
 
 func _on_animation_started(animation_name):
-	print(animation_name)
 	if authority:
 		var new_animation_state = {}
 		new_animation_state["t"] = cur_time
@@ -130,10 +129,11 @@ func get_gravity():
 func horizontal_flip(horizontal_direction):
 	var polygons = $Polygons
 	var skeleton2d = $Skeleton2D
+	var hitbox = $Hitbox
 
 	polygons.scale.x = abs(polygons.scale.x) * horizontal_direction
 	skeleton2d.scale.x = abs(skeleton2d.scale.x) * horizontal_direction
-	
+
 	var new_hor_dir_state = {}
 	new_hor_dir_state["t"] = cur_time
 	new_hor_dir_state["h"] = horizontal_direction
@@ -150,3 +150,7 @@ func get_input_velocity():
 		horizontal += 1.0
 		
 	return horizontal
+
+
+func _on_hurtbox_entered(area):
+	print(str(multiplayer.get_unique_id()) + " " + str(area.name))
