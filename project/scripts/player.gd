@@ -6,6 +6,10 @@ extends CharacterBody2D
 @export var jump_time_to_descent : float
 @export var max_jumps : int
 
+var current_knockback = Vector2.ZERO
+@export var knockback : float
+@export_range(0, 1, 0.1) var knockback_diminishment_rate : float
+
 @onready var jump_velocity = -(2.0 * jump_height) / jump_time_to_peak
 @onready var jump_gravity = -(-2.0 * jump_height) / jump_time_to_peak ** 2
 @onready var fall_gravity = -(-2.0 * jump_height) / jump_time_to_descent ** 2
@@ -14,6 +18,7 @@ var authority
 var grounded
 var cur_time = 0
 var jump_num = 0
+
 
 signal jumped
 signal landed
@@ -62,6 +67,10 @@ func _physics_process(delta):
 		
 		velocity.x = get_input_velocity() * move_speed
 		velocity.y += get_gravity() * delta
+		velocity += current_knockback
+		
+		# Slowly reduce knockback if any
+		current_knockback = current_knockback.slerp(Vector2.ZERO, knockback_diminishment_rate)
 		
 		if Input.is_action_just_pressed("attack"):
 			$AnimationPlayer.play("ATTACK")
@@ -133,7 +142,8 @@ func horizontal_flip(horizontal_direction):
 
 	polygons.scale.x = abs(polygons.scale.x) * horizontal_direction
 	skeleton2d.scale.x = abs(skeleton2d.scale.x) * horizontal_direction
-
+	hitbox.scale.x = abs(hitbox.scale.x) * horizontal_direction
+	
 	var new_hor_dir_state = {}
 	new_hor_dir_state["t"] = cur_time
 	new_hor_dir_state["h"] = horizontal_direction
@@ -153,4 +163,13 @@ func get_input_velocity():
 
 
 func _on_hurtbox_entered(area):
-	print(str(multiplayer.get_unique_id()) + " " + str(area.name))
+	# We only want to do something if we have authority
+	if authority == true:
+		var hitting_player = area.owner # Player who is hitting
+		var direction = get_global_position() - hitting_player.get_global_position()
+		direction = direction.normalized()
+		
+		current_knockback = direction * hitting_player.knockback
+		
+		print(str(multiplayer.get_unique_id()) + str(direction))
+	#print(str(multiplayer.get_unique_id()) + " " + str(area.name))
