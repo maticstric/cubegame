@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://den4vikpqq3y8"]
+[gd_scene load_steps=10 format=3 uid="uid://den4vikpqq3y8"]
 
 [ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
 [ext_resource type="PackedScene" uid="uid://u3knavpxix35" path="res://project/scenes/objects/02_backgrounds/02_RedFields/RedFieldsBackground.tscn" id="3_c8mim"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://4sfqgcwi5bbx" path="res://project/scenes/objects/06_Accessories/Rocks2.tscn" id="6_graht"]
 [ext_resource type="TileSet" uid="uid://dupfq76rkrwb7" path="res://project/scenes/objects/04_Tilemaps/00_PermaBorder.tres" id="8_xiv42"]
 [ext_resource type="TileSet" uid="uid://citep3cnbu2hh" path="res://project/scenes/objects/04_Tilemaps/RedFieldsTiles.tres" id="9_dbala"]
+[ext_resource type="PackedScene" uid="uid://cthaahvylteaq" path="res://project/scenes/objects/06_Accessories/stardust.tscn" id="9_ob535"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_yf11b")
@@ -79,3 +80,6 @@ layer_0/tile_data = PackedInt32Array(589823, 1, 2, 524288, 65537, 2, 524289, 655
 tile_set = ExtResource("9_dbala")
 format = 2
 layer_0/tile_data = PackedInt32Array(786436, 65536, 3, 786437, 131072, 3, 786438, 131072, 3, 786439, 131072, 3, 786440, 196608, 3, 851981, 65536, 3, 851982, 131072, 3, 851983, 131072, 3, 851984, 131072, 3, 851985, 196608, 3, 851990, 65536, 3, 851991, 131072, 3, 851992, 131072, 3, 851993, 131072, 3, 851994, 196608, 3, 393232, 65536, 3, 393233, 131072, 3, 393234, 131072, 3, 393235, 131072, 3, 393236, 196608, 3, 23, 65536, 3, 24, 131072, 3, 25, 131072, 3, 26, 131072, 3, 27, 196608, 0, 65563, 0, 1, 131099, 0, 1, 196635, 0, 1, 262171, 196608, 2, 262170, 131072, 3, 262169, 131072, 3, 262168, 65536, 3, 589834, 65536, 3, 589835, 131072, 3, 589836, 131072, 3, 589837, 131072, 3, 589838, 196608, 3, 393218, 65536, 3, 393219, 131072, 3, 393220, 131072, 3, 393221, 131072, 3, 393222, 131072, 3, 393223, 196608, 3, 196617, 65536, 3, 196618, 131072, 3, 196619, 131072, 3, 196620, 131072, 3, 196621, 196608, 3)
+
+[node name="stardust" parent="." instance=ExtResource("9_ob535")]
+position = Vector2(96, -66)

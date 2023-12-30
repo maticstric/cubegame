@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://cthaahvylteaq"]
+
+[ext_resource type="Texture2D" uid="uid://b00knbai36u10" path="res://project/resources/06_Accessories/02_RedFieldsMap/RoundParticle.png" id="1_7i76s"]
+
+[sub_resource type="Curve" id="Curve_1lqcd"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, -40.9017), 0.0, 0.0, 0, 0, Vector2(1, -360), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_dt2kt"]
+min_value = -500.0
+max_value = 500.0
+_data = [Vector2(0, -314.698), 0.0, 749.486, 0, 1, Vector2(0.508314, 66.2759), 0.0, 0.0, 0, 0, Vector2(1, -232.642), -607.944, 0.0, 1, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_gaofl"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, -163.282), 0.0, 0.0, 0, 0, Vector2(0.289786, 284.04), 0.0, 0.0, 0, 0, Vector2(1, -205.482), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_0preq"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="Gradient_u72v8"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.576471)
+
+[node name="stardust" type="Node2D"]
+
+[node name="particle system" type="CPUParticles2D" parent="."]
+amount = 50
+lifetime = 4.0
+speed_scale = 0.42
+randomness = 0.09
+lifetime_randomness = 0.19
+texture = ExtResource("1_7i76s")
+emission_shape = 3
+emission_rect_extents = Vector2(500, 1)
+gravity = Vector2(250, 200)
+angular_velocity_curve = SubResource("Curve_1lqcd")
+orbit_velocity_curve = SubResource("Curve_dt2kt")
+angle_curve = SubResource("Curve_gaofl")
+scale_amount_min = 0.2
+color_ramp = SubResource("Gradient_0preq")
+color_initial_ramp = SubResource("Gradient_u72v8")
