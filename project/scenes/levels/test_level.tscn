@@ -1,19 +1,20 @@
 [gd_scene load_steps=9 format=3 uid="uid://den4vikpqq3y8"]
 
 [ext_resource type="Script" path="res://project/scripts/spawn_controller.gd" id="1_yf11b"]
-[ext_resource type="PackedScene" uid="uid://btsmjabn447xs" path="res://project/scenes/objects/02_backgrounds/01_SpikeMountains/SpikeMountainsBackground.tscn" id="3_uquy7"]
+[ext_resource type="PackedScene" uid="uid://u3knavpxix35" path="res://project/scenes/objects/02_backgrounds/02_RedFields/RedFieldsBackground.tscn" id="3_c8mim"]
 [ext_resource type="PackedScene" uid="uid://dbg2wg4ew5kgf" path="res://project/scenes/objects/06_Accessories/ice_grass_1.tscn" id="4_go3i2"]
 [ext_resource type="PackedScene" uid="uid://js1hajihd3sf" path="res://project/scenes/objects/01_player characters/starherder.tscn" id="4_k677e"]
 [ext_resource type="PackedScene" uid="uid://dbbgyiuhrc5pk" path="res://project/scenes/objects/06_Accessories/Rocks1.tscn" id="5_t2b3b"]
 [ext_resource type="PackedScene" uid="uid://4sfqgcwi5bbx" path="res://project/scenes/objects/06_Accessories/Rocks2.tscn" id="6_graht"]
-[ext_resource type="TileSet" uid="uid://6o76q3rhy71w" path="res://project/scenes/objects/04_Tilemaps/SpikeMountain_Tiles.tres" id="8_pg3wq"]
 [ext_resource type="TileSet" uid="uid://dupfq76rkrwb7" path="res://project/scenes/objects/04_Tilemaps/00_PermaBorder.tres" id="8_xiv42"]
+[ext_resource type="TileSet" uid="uid://citep3cnbu2hh" path="res://project/scenes/objects/04_Tilemaps/RedFieldsTiles.tres" id="9_dbala"]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_yf11b")
 player_scene = ExtResource("4_k677e")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
 light_mask = 16
 position = Vector2(935, 1089)
 rotation = 0.447932
@@ -23,12 +24,12 @@ shadow_enabled = true
 shadow_color = Color(0.447059, 0.447059, 0.447059, 0.984314)
 shadow_item_cull_mask = 8
 
-[node name="SpikeMountainsBackground" parent="." instance=ExtResource("3_uquy7")]
-modulate = Color(0.917647, 0.917647, 0.917647, 1)
-position = Vector2(935, 1089)
-scale = Vector2(0.519999, 0.519999)
+[node name="RedFieldsBackground" parent="." instance=ExtResource("3_c8mim")]
+position = Vector2(-76, -349)
+scale = Vector2(0.719999, 0.719999)
 
 [node name="Accessories" type="Node2D" parent="."]
+visible = false
 
 [node name="IceGrass_1" parent="Accessories" instance=ExtResource("4_go3i2")]
 z_index = 1
@@ -69,13 +70,12 @@ position = Vector2(832, 448)
 [node name="3" type="Node2D" parent="SpawnLocations"]
 position = Vector2(384, 640)
 
-[node name="MainTilemap" type="TileMap" parent="."]
-modulate = Color(0.968627, 0.968627, 0.968627, 1)
-tile_set = ExtResource("8_pg3wq")
-format = 2
-layer_0/tile_data = PackedInt32Array(393218, 65537, 3, 393219, 131073, 3, 393220, 131073, 3, 393221, 131073, 3, 393222, 131073, 3, 393223, 196609, 3, 589834, 65537, 3, 589835, 131073, 3, 589836, 131073, 3, 589837, 131073, 3, 589838, 196609, 3, 393232, 65537, 3, 393233, 131073, 3, 393234, 131073, 3, 393235, 131073, 3, 393236, 196609, 3, 786436, 65537, 3, 786437, 131073, 3, 786438, 131073, 3, 786439, 131073, 3, 786440, 196609, 3, 851981, 65537, 3, 851982, 131073, 3, 851983, 131073, 3, 851984, 131073, 3, 851985, 196609, 3, 196617, 65537, 3, 196618, 131073, 3, 196619, 131073, 3, 196620, 131073, 3, 196621, 196609, 3, 23, 65537, 3, 24, 131073, 3, 25, 131073, 3, 26, 131073, 3, 27, 196609, 0, 65563, 1, 1, 131099, 1, 1, 196635, 1, 1, 262171, 196609, 2, 262170, 131073, 3, 262169, 131073, 3, 262168, 65537, 3, 851990, 65537, 3, 851991, 131073, 3, 851992, 131073, 3, 851993, 131073, 3, 851994, 196609, 3)
-
 [node name="BorderTilemap" type="TileMap" parent="."]
 tile_set = ExtResource("8_xiv42")
 format = 2
 layer_0/tile_data = PackedInt32Array(589823, 1, 2, 524288, 65537, 2, 524289, 65537, 2, 524290, 65537, 2, 524291, 65537, 2, 524292, 65537, 2, 524293, 65537, 2, 524294, 65537, 2, 524295, 65537, 2, 524296, 65537, 2, 524297, 65537, 2, 524298, 65537, 2, 524299, 65537, 2, 524300, 65537, 2, 524301, 65537, 2, 524303, 131073, 2, 65535, 1, 1, 131071, 1, 1, 196607, 1, 1, 262143, 1, 1, 327679, 1, 1, 393215, 1, 1, 458751, 1, 1, 524287, 1, 1, 393231, 131073, 1, 327695, 131073, 1, 262159, 131073, 1, 196623, 131073, 1, 131087, 131073, 1, 65551, 131073, 1, 15, 131073, 1, -65521, 131073, 0, -1, 1, 0, -65536, 65537, 0, -65535, 65537, 0, -65534, 65537, 0, -65533, 65537, 0, -65532, 65537, 0, -65531, 65537, 0, -65530, 65537, 0, -65529, 65537, 0, -65528, 65537, 0, -65527, 65537, 0, -65526, 65537, 0, -65525, 65537, 0, -65524, 65537, 0, -65523, 65537, 0, -65522, 65537, 0, 524302, 65537, 2, 458767, 131073, 1)
+
+[node name="RedFieldsTilemap" type="TileMap" parent="."]
+tile_set = ExtResource("9_dbala")
+format = 2
+layer_0/tile_data = PackedInt32Array(786436, 65536, 3, 786437, 131072, 3, 786438, 131072, 3, 786439, 131072, 3, 786440, 196608, 3, 851981, 65536, 3, 851982, 131072, 3, 851983, 131072, 3, 851984, 131072, 3, 851985, 196608, 3, 851990, 65536, 3, 851991, 131072, 3, 851992, 131072, 3, 851993, 131072, 3, 851994, 196608, 3, 393232, 65536, 3, 393233, 131072, 3, 393234, 131072, 3, 393235, 131072, 3, 393236, 196608, 3, 23, 65536, 3, 24, 131072, 3, 25, 131072, 3, 26, 131072, 3, 27, 196608, 0, 65563, 0, 1, 131099, 0, 1, 196635, 0, 1, 262171, 196608, 2, 262170, 131072, 3, 262169, 131072, 3, 262168, 65536, 3, 589834, 65536, 3, 589835, 131072, 3, 589836, 131072, 3, 589837, 131072, 3, 589838, 196608, 3, 393218, 65536, 3, 393219, 131072, 3, 393220, 131072, 3, 393221, 131072, 3, 393222, 131072, 3, 393223, 196608, 3, 196617, 65536, 3, 196618, 131072, 3, 196619, 131072, 3, 196620, 131072, 3, 196621, 196608, 3)

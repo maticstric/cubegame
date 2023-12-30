@@ -456,6 +456,7 @@ _data = {
 
 [node name="Neck" type="Polygon2D" parent="Polygons"]
 position = Vector2(94, -331)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-509.653, -450.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -466,6 +467,7 @@ bones = ["Torso", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
 
 [node name="BackBackLeg" type="Polygon2D" parent="Polygons"]
 position = Vector2(-71, -274)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-231.653, -682.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -477,6 +479,7 @@ internal_vertex_count = 9
 
 [node name="BackFrontLeg" type="Polygon2D" parent="Polygons"]
 position = Vector2(135, -308)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-781.653, -638.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -488,6 +491,7 @@ internal_vertex_count = 6
 
 [node name="Torso" type="Polygon2D" parent="Polygons"]
 position = Vector2(1, -335)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-806.653, -463.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -499,6 +503,7 @@ internal_vertex_count = 4
 
 [node name="BackEar" type="Polygon2D" parent="Polygons"]
 position = Vector2(525, -703)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-235.653, -327.87)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -510,6 +515,7 @@ internal_vertex_count = 3
 
 [node name="Head" type="Polygon2D" parent="Polygons"]
 position = Vector2(457, -641)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-322.653, -119.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -520,6 +526,7 @@ bones = ["Torso", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0), "Torso/Neck", P
 
 [node name="FrontEar" type="Polygon2D" parent="Polygons"]
 position = Vector2(494, -723)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-104.653, -317.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -541,6 +548,7 @@ bones = ["Torso", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "Torso/Neck", PackedF
 
 [node name="Tail" type="Polygon2D" parent="Polygons"]
 position = Vector2(-100, -318)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-321.653, -436.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -552,6 +560,7 @@ internal_vertex_count = 6
 
 [node name="FrontBackLeg" type="Polygon2D" parent="Polygons"]
 position = Vector2(-9, -272)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-611.653, -685.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
@@ -563,6 +572,7 @@ internal_vertex_count = 9
 
 [node name="FrontFrontLeg" type="Polygon2D" parent="Polygons"]
 position = Vector2(-80, -268)
+color = Color(0.701961, 0.701961, 0.701961, 1)
 offset = Vector2(-756.653, -673.865)
 texture = ExtResource("1_o5y4b")
 skeleton = NodePath("../../Skeleton2D")
