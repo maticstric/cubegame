@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
 @export var projectile_scene : PackedScene
-@export var projectile_max_speed : float
 @export var projectile_min_speed : float
+@export var projectile_max_speed : float
 @onready var projectile_initial_speed = projectile_min_speed
 
 @export var move_speed : float
+@export var throw_move_speed : float
 @export var jump_height : float
 @export var jump_time_to_peak : float
 @export var jump_time_to_descent : float
@@ -83,7 +84,14 @@ func _physics_process(delta):
 			$AnimationPlayer.play("ATTACK")
 		
 		if Input.is_action_pressed("throw"):
-			projectile_initial_speed += 1
+			#projectile_initial_speed += 1
+			
+			if projectile_initial_speed < projectile_max_speed:
+				projectile_initial_speed += 1
+				
+			if abs(velocity.x) > 0:
+				velocity.x = get_input_velocity() * throw_move_speed
+				
 		elif Input.is_action_just_released("throw"):
 			var projectile = projectile_scene.instantiate()
 			projectile.set_global_position($ProjectileSpawnPosition.global_position)
