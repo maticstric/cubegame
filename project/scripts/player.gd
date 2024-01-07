@@ -1,5 +1,10 @@
 extends CharacterBody2D
 
+@export var projectile_scene : PackedScene
+@export var projectile_max_speed : float
+@export var projectile_min_speed : float
+@onready var projectile_initial_speed = projectile_min_speed
+
 @export var move_speed : float
 @export var jump_height : float
 @export var jump_time_to_peak : float
@@ -14,10 +19,12 @@ var current_knockback = Vector2.ZERO
 @onready var jump_gravity = -(-2.0 * jump_height) / jump_time_to_peak ** 2
 @onready var fall_gravity = -(-2.0 * jump_height) / jump_time_to_descent ** 2
 
+
 var authority
 var grounded
 var cur_time = 0
 var jump_num = 0
+
 
 
 signal jumped
@@ -74,6 +81,16 @@ func _physics_process(delta):
 		
 		if Input.is_action_just_pressed("attack"):
 			$AnimationPlayer.play("ATTACK")
+		
+		if Input.is_action_pressed("throw"):
+			projectile_initial_speed += 1
+		elif Input.is_action_just_released("throw"):
+			var projectile = projectile_scene.instantiate()
+			projectile.set_global_position($ProjectileSpawnPosition.global_position)
+			projectile.initial_speed = projectile_initial_speed
+			get_tree().root.add_child(projectile)
+			
+			projectile_initial_speed = projectile_min_speed
 		
 		if is_on_floor():
 			jump_num = 0

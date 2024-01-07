@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://js1hajihd3sf"]
+[gd_scene load_steps=24 format=3 uid="uid://js1hajihd3sf"]
 
 [ext_resource type="Script" path="res://project/scripts/player.gd" id="1_6beam"]
+[ext_resource type="PackedScene" uid="uid://bp5nmsvhmld2y" path="res://project/scenes/objects/projectile.tscn" id="2_kbwfa"]
 [ext_resource type="Texture2D" uid="uid://b40gq2eqhoons" path="res://project/resources/01_PlayerCharacters/01_starherder/AttackSwing Small.png" id="2_xxfqv"]
 [ext_resource type="Texture2D" uid="uid://b166od44kp236" path="res://project/resources/01_PlayerCharacters/01_starherder/AttackSwing.png" id="3_wndlv"]
 [ext_resource type="Texture2D" uid="uid://cs7jro8ey0jku" path="res://project/resources/01_PlayerCharacters/01_starherder/donkeyanimation_tex.png" id="5_84w6y"]
@@ -5125,6 +5126,7 @@ size = Vector2(9.6, 7.2)
 [node name="Starherder" type="CharacterBody2D"]
 modulate = Color(0.937255, 0.937255, 0.937255, 1)
 script = ExtResource("1_6beam")
+projectile_scene = ExtResource("2_kbwfa")
 move_speed = 500.0
 jump_height = 250.0
 jump_time_to_peak = 0.35
@@ -5452,7 +5454,7 @@ bone_angle = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_0krkl")
 }
-blend_times = [&"LEAP", &"RISE", 0.1, &"RISE", &"FALL", 0.1]
+blend_times = [&"RISE", &"FALL", 0.1, &"LEAP", &"RISE", 0.1]
 script = ExtResource("5_y5ep0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -5486,3 +5488,6 @@ collision_mask = 0
 position = Vector2(8.4, -7.2)
 shape = SubResource("RectangleShape2D_fbm4p")
 disabled = true
+
+[node name="ProjectileSpawnPosition" type="Node2D" parent="."]
+position = Vector2(16, -56)
