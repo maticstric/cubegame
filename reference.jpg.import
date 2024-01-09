@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bliq1pwmhs0o6"
-path="res://.godot/imported/Red Fields_Background.png-51a879639f5a526a7ff23edf98c879af.ctex"
+uid="uid://21o8kki31320"
+path="res://.godot/imported/reference.jpg-59fe9de03424c75496f95334cd752267.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/resources/02_Backgrounds/02_RedFields/Red Fields_Background.png"
-dest_files=["res://.godot/imported/Red Fields_Background.png-51a879639f5a526a7ff23edf98c879af.ctex"]
+source_file="res://reference.jpg"
+dest_files=["res://.godot/imported/reference.jpg-59fe9de03424c75496f95334cd752267.ctex"]
 
 [params]
 

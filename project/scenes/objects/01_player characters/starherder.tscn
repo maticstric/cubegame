@@ -5427,7 +5427,7 @@ bone_angle = 17.454
 position = Vector2(-23, -154)
 rotation = 2.25271
 scale = Vector2(0.999851, 0.999855)
-skew = -0.000435114
+skew = -0.000435233
 rest = Transform2D(-0.630283, 0.776366, -0.776366, -0.630283, -23, -154)
 auto_calculate_length_and_angle = false
 length = 127.481
@@ -5457,7 +5457,7 @@ bone_angle = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_0krkl")
 }
-blend_times = [&"RISE", &"FALL", 0.1, &"LEAP", &"RISE", 0.1]
+blend_times = [&"LEAP", &"RISE", 0.1, &"RISE", &"FALL", 0.1]
 script = ExtResource("5_y5ep0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
