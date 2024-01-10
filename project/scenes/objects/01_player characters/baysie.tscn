@@ -164,6 +164,18 @@ tracks/12/keys = {
 "update": 0,
 "values": [Vector2(1, 1)]
 }
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/Torso/Head:scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_n6cmm"]
 resource_name = "WALK"
@@ -276,19 +288,19 @@ tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.18, 0.39, 0.6, 0.81, 1.02, 1.2, 1.41, 1.62, 1.83, 2.04, 2.22, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(53.481, -26.541), Vector2(33.7372, -27.3277), Vector2(53.481, -26.541), Vector2(62.7261, -28.6083), Vector2(53.481, -26.541), Vector2(33.7372, -27.3277), Vector2(53.481, -26.541), Vector2(62.7261, -28.6083), Vector2(53.481, -26.541), Vector2(33.7372, -27.3277), Vector2(53.481, -26.541), Vector2(62.7261, -28.6083), Vector2(53.481, -26.541)]
+"values": [Vector2(53.481, -26.541), Vector2(44.7463, -26.4342), Vector2(53.481, -26.541), Vector2(62.7455, -26.6084), Vector2(53.481, -26.541), Vector2(44.7463, -26.4342), Vector2(53.481, -26.541), Vector2(62.7455, -26.6084), Vector2(53.481, -26.541), Vector2(44.7463, -26.4342), Vector2(53.481, -26.541), Vector2(62.7455, -26.6084), Vector2(53.481, -26.541)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/path = NodePath("Skeleton2D/Torso/ArmL:rotation")
-tracks/9/interp = 2
+tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.18, 0.39, 0.6, 0.81, 1.02, 1.2, 1.41, 1.62, 1.83, 2.04, 2.22, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [-2.70541, -3.09074, -2.70541, -2.24031, -2.70541, -3.09074, -2.70541, -2.24031, -2.70541, -3.09074, -2.70541, -2.24031, -2.70541]
+"values": [-3.18508, -4.26278, -3.18508, -1.79713, -3.18508, -4.26278, -3.18508, -1.79713, -3.18508, -4.26278, -3.18508, -1.79713, -3.18508]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -300,19 +312,19 @@ tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.18, 0.39, 0.6, 0.81, 1.02, 1.2, 1.41, 1.62, 1.83, 2.04, 2.22, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(42.2691, 27.5921), Vector2(31.2792, 28.6987), Vector2(42.2691, 27.5921), Vector2(50.3073, 31.5147), Vector2(42.2691, 27.5921), Vector2(31.2792, 28.6987), Vector2(42.2691, 27.5921), Vector2(50.3073, 31.5147), Vector2(42.2691, 27.5921), Vector2(31.2792, 28.6987), Vector2(42.2691, 27.5921), Vector2(50.3073, 31.5147), Vector2(42.2691, 27.5921)]
+"values": [Vector2(41.3174, 32.6017), Vector2(34.279, 28.6697), Vector2(41.3174, 32.6017), Vector2(52.3266, 33.4952), Vector2(41.3174, 32.6017), Vector2(34.279, 28.6697), Vector2(41.3174, 32.6017), Vector2(52.3266, 33.4952), Vector2(41.3174, 32.6017), Vector2(34.279, 28.6697), Vector2(41.3174, 32.6017), Vector2(52.3266, 33.4952), Vector2(41.3174, 32.6017)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/path = NodePath("Skeleton2D/Torso/ArmR:rotation")
-tracks/11/interp = 2
+tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.18, 0.39, 0.6, 0.81, 1.02, 1.2, 1.41, 1.62, 1.83, 2.04, 2.22, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [2.83136, 3.16556, 2.83136, 2.44919, 2.83136, 3.16556, 2.83136, 2.44919, 2.83136, 3.16556, 2.83136, 2.44919, 2.83136]
+"values": [3.09245, 4.13794, 3.09245, 1.8205, 3.09245, 4.13794, 3.09245, 1.8205, 3.09245, 4.13794, 3.09245, 1.8205, 3.09245]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -324,7 +336,19 @@ tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.18, 0.39, 0.81, 1.02, 1.2, 1.62, 1.83, 2.04, 2.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(0.784748, 1), Vector2(1, 1), Vector2(1, 1), Vector2(0.784748, 1), Vector2(1, 1), Vector2(1, 1), Vector2(0.784748, 1), Vector2(1, 1), Vector2(1, 1)]
+"values": [Vector2(1, 0.68079), Vector2(0.784748, 1), Vector2(1, 0.68079), Vector2(1, 0.68079), Vector2(0.784748, 1), Vector2(1, 0.68079), Vector2(1, 0.68079), Vector2(0.784748, 1), Vector2(1, 0.68079), Vector2(1, 0.68079)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Skeleton2D/Torso/Head:scale")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.96, 1.08, 1.5, 1.62, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, -1), Vector2(1, -1), Vector2(1, 1), Vector2(1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r7dbd"]
@@ -399,7 +423,6 @@ polygons = [PackedInt32Array(0, 1, 2, 3)]
 bones = ["Torso", PackedFloat32Array(0, 0, 0, 0), "Torso/Head", PackedFloat32Array(1, 1, 1, 1), "Torso/ArmL", PackedFloat32Array(0, 0, 0, 0), "Torso/ArmR", PackedFloat32Array(0, 0, 0, 0), "Torso/LegL", PackedFloat32Array(0, 0, 0, 0), "Torso/LegR", PackedFloat32Array(0, 0, 0, 0)]
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
-visible = false
 
 [node name="Torso" type="Bone2D" parent="Skeleton2D"]
 position = Vector2(-1, -30)
@@ -414,6 +437,7 @@ rest = Transform2D(0.834203, 0.551457, -0.551457, 0.834203, 55.2104, 21.4666)
 [node name="ArmL" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(53.481, -26.541)
 rotation = -2.70541
+scale = Vector2(1, 1)
 rest = Transform2D(-0.906372, -0.42248, 0.42248, -0.906372, 55.7457, -26.5408)
 auto_calculate_length_and_angle = false
 length = 44.221
@@ -422,6 +446,7 @@ bone_angle = 0.0
 [node name="ArmR" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(42.2691, 27.5921)
 rotation = 2.83136
+scale = Vector2(1, 1)
 rest = Transform2D(-0.952262, 0.305281, -0.305281, -0.952262, 42.2691, 27.5921)
 auto_calculate_length_and_angle = false
 length = 30.11
@@ -430,6 +455,7 @@ bone_angle = 0.0
 [node name="LegL" type="Bone2D" parent="Skeleton2D/Torso"]
 position = Vector2(-9.16407, -16.9121)
 rotation = 3.57297
+scale = Vector2(1, 1)
 rest = Transform2D(-0.999996, 0.002844, -0.002844, -0.999996, -8.08674, -8.92214)
 auto_calculate_length_and_angle = false
 length = 16.0
