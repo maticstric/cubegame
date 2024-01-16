@@ -1,5 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 
+*.dmg
+*.pck
+*.exe
+
 # Mac
 .DS_Store
